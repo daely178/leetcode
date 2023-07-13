@@ -112,10 +112,14 @@ class Solution:
         # 2. Verify col 1x9
         # 3. Verify 3x3
 
-        #verification = [0] * [3][9]
         # 1st row : columns
         # 2nd row : rows
         # 3rd row : 3x3 from left to right, top to bottom
+        
+        # Time complexity O(n2 * 3) n=9 
+        # Space complexity O(n) n = 9
+        
+        # Runtime 115 ms Beats 70.57% Memory 16.3 MB Beats 85.12%
         
         veri_dict = defaultdict(str)
         
