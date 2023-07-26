@@ -126,25 +126,43 @@ import heapq
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
 
+        LEFTMOST = -1
+        RIGHTMOST = 0
+        
         q, res = deque(), []
         
         for r in range(len(nums)):
             
-            while q and nums[q[-1]] < nums[r]:
+            while q and nums[q[LEFTMOST]] < nums[r]:
                 q.pop()
                 
             q.append(r)
             
             if r+1 < k: continue
             
-            if r+1-k > q[0]:
+            if r+1-k > q[RIGHTMOST]:
                 q.popleft()
             
-            res.append(nums[q[0]])
+            res.append(nums[q[RIGHTMOST]])
 
         return res
 
 s = Solution()
-result = s.maxSlidingWindow(nums=[1,-1], k=1)
+result = s.maxSlidingWindow([1,3,-1,-3,5,3,6,7], k = 3)
 
 print(result)
+
+# pop rightmost if smaller than new value
+# add new num's id in dq
+# if current index is smaller than window, do nothing
+# if id is bigger than window size, pop leftmost
+# add leftmost which is bigest in window to the result list
+
+# 0: 1 -> dq [0]
+# 1: 1 <- 3 -> dq [1]
+# 2: 3 <- -1 -> dq [1, 2], ans [3]
+# 3: 3, -1 <- -3 -> dq [1,2,3], ans [3,3]
+# 4: 3, -1. -3 <- 5 -> dq [4] -> ans [3,3,5]
+# 5: 5 <- 3 -> dq [4,5] -> ans[3,3,5,5]
+# 6: 5,3 <- 6 -> dq [6] -> ans[3,3,5,5,6]
+# 7: 6 <- 7 -> dq [7] -> ans[3,3,5,5,6,7]
