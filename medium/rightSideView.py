@@ -57,22 +57,24 @@ class Solution1: # first try but misunderstanding
 class SolutionRecursion:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
 
-        ans = []
         # exlist1 = [1,2,3,None,5,None,4]
         #    1
         # 2  ,  3 
         #x,5   x,4         
+        ans = []
+
         def _rightSideView(node, level):
-            
+            if node == None:
+                return
+
             if level == len(ans):
                 ans.append(node.val)
-            if node.right:
-                return _rightSideView(node.right, level+1)
-            if node.left:
-                return _rightSideView(node.right, level+1)
-            return ans
-        
-        return _rightSideView(root, 0)
+            
+            _rightSideView(node.right, level+1)
+            _rightSideView(node.left, level+1)
+                
+        _rightSideView(root, 0)
+        return ans
     
 class SolutionQ:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
@@ -134,16 +136,16 @@ def printRightTreeNode(result):
     for i in range(len(result)):
         print("result[{}] = {}".format(i, result[i]))
     
-s = SolutionRecursion()
+s = SolutionQ()
 
 
 exlist1 = [1,2,3,None,5,None,4]
-exlist2 = [1,2]
+exlist2 = [1,2,3,4]
 #    1
 # 2  ,  3 
 #x,5   x,4 
 
-head = tree_creator(exlist1)
+head = tree_creator(exlist2)
 #head = tree_builder(exlist2)
 result = s.rightSideView(head)
 

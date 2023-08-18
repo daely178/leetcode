@@ -50,6 +50,10 @@ class Solution:
         right = count -1
         if count > 2:
             while left<right:
+                
+                # 1-2-3-4
+                # 1-4-2
+                # 2-3-3
 
                 forward_node = copiedList[left]
                 forward_next_node = copiedList[left+1]
@@ -62,6 +66,8 @@ class Solution:
                 right -= 1
                 
             # when left=right which is mid index is the last node after reorder
+            # 3-3 -> 3-None
+            # duplicate operation for the last node
             forward_node = copiedList[left]
             forward_node.next = None
 
