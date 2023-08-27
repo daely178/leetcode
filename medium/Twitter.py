@@ -46,65 +46,34 @@ from typing import List
 from collections import deque, defaultdict
 import heapq, itertools, collections
 from queue import PriorityQueue
-
 class Twitter:
-
-    def __init__(self):
-        # Use itertools.count to generate a decreasing sequence of integers for tweets
-        self.timer = itertools.count(step=-1)
-        # Use defaultdict and deque to store tweets for each user
-        self.tweets = collections.defaultdict(deque)
-        # Use defaultdict and set to store followees for each user
-        self.followees = collections.defaultdict(set)
-
-    def postTweet(self, userId: int, tweetId: int) -> None:
-        # Append the tweet to the left of the deque for the user, along with its timestamp
-        self.tweets[userId].appendleft((next(self.timer), tweetId))
-        # If the deque for the user has more than 10 tweets, remove the oldest tweet from the right
-        if len(self.tweets[userId]) > 10:
-            self.tweets[userId].pop()
-
-    def getNewsFeed(self, userId: int) -> List[int]:
-        # Merge the tweets of the user's followees (including the user) using heapq.merge
-        tweets = list(heapq.merge(
-        *(self.tweets[followee] for followee in self.followees[userId] | {userId})))
-        # Return the tweet IDs of the 10 most recent tweets
-        return [tweetId for _, tweetId in tweets[:10]]
-
-    def follow(self, followerId: int, followeeId: int) -> None:
-        # Add the followee to the set of followees for the follower
-        self.followees[followerId].add(followeeId)
-
-    def unfollow(self, followerId: int, followeeId: int) -> None:
-        # Remove the followee from the set of followees for the follower (if the followee exists)
-        self.followees[followerId].discard(followeeId)
-        
-class TwitterMine:
 
     def __init__(self):
         self.tweetDB = defaultdict(deque)
         self.followDB = defaultdict(set)
-        self.time = -1   
+        self.time = 1   
 
     def postTweet(self, userId: int, tweetId: int) -> None:        
-        self.tweetDB[userId].appendleft((self.time, tweetId))
-        self.time -= 1
+        self.tweetDB[userId].append((self.time, tweetId))
+        self.time += 1
         if len(self.tweetDB[userId]) > 10:
-            self.tweetDB[userId].pop() # Maintain 10 after removing oldest one
+            self.tweetDB[userId].popleft() # Maintain 10 after removing oldest one
 
     def getNewsFeed(self, userId: int) -> List[int]:
         
         totaltweets = []
-        totaltweets += self.tweetDB[userId]
+        for tweet in self.tweetDB[userId]:
+            heapq.heappush(totaltweets, tweet)
         for followee in self.followDB[userId]:
-            totaltweets.extend(self.tweetDB[followee])
-
-        heapq.heapify(totaltweets)
-        
+            for tweet in self.tweetDB[followee]:
+                heapq.heappush(totaltweets, tweet)
+                if len(totaltweets) > 10:
+                    heapq.heappop(totaltweets)
         ans = []
-        while totaltweets and len(ans) <= 10:
+        while totaltweets and len(ans) < 10:
             ans.append(heapq.heappop(totaltweets)[1])
-            
+        ans.reverse()
+
         return ans
 
     def follow(self, followerId: int, followeeId: int) -> None:
@@ -112,6 +81,25 @@ class TwitterMine:
 
     def unfollow(self, followerId: int, followeeId: int) -> None:
         self.followDB[followerId].discard(followeeId)
+
+
+# key points
+# user id <- follower (another user id)
+# tweet id <- user id
+# return most recent 10
+
+# strategy
+# 1. tweet DB : key=user id, value= descending time, tweet id
+# 2. follower DB : key = follower id (user id), value = followee id (user id)
+# 3. store new tweet on leftmost, pop when it exceeds 10
+#   tweet DB [ insert new -> [-5,5],[-4,3],[-3,101],[-2,13],[-1,10] <-- pop ]
+#   follow DB [followerID] = [ followeeID1, followeeID2, followeeID3, ...]
+# 4. newfeed
+#    pull all tweets from tweetDB with user id and followeeID
+#    heapify to sort
+#    copy 10 most recent tweets to output
+
+
 
 # Your Twitter object will be instantiated and called as such:
 #Input
@@ -170,7 +158,3 @@ print(param_2)
 obj.unfollow(1,2)
 param_2 = obj.getNewsFeed(1)
 print(param_2)
-#obj.follow(2,1)
-#param_2 = obj.getNewsFeed(2)
-#obj.unfollow(2,1)
-#param_2 = obj.getNewsFeed(2)
