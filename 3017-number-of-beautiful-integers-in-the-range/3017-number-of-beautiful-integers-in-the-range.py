@@ -2,28 +2,33 @@ class Solution:
     def numberOfBeautifulIntegers(self, low: int, high: int, k: int) -> int:
         
         @cache
-        def dfs(s, index, odd, even, remainder, tight, leadingZero):
-            if index >= len(s):
-                return remainder % k == 0 and odd == even
+        def dp(i, flag, rest, odd_even):
+            if i == len(t):
+                return flag >= 0 and not rest and not odd_even
             
-            bound = int(s[index]) if tight else 9
-            ans = 0
-            for digit in range(bound + 1):
-                add_odd = digit % 2 == 1
-                add_even = digit % 2 == 0
-                
-                if leadingZero and digit == 0:
-                    add_even = 0
+            
+            ans = int(0 < i < len(t) and not rest and not odd_even)
+            for j in range(int(i == 0), 10):
+                # compare the most significant digit with upper limit only when
+                # previous comparsion are all equal (flag = 0)
+                new_flag = flag
+                if flag == 0:
+                    # diff determined if current digit not equal with the one of upper limit
+                    if j > int(t[i]): new_flag = -1
+                    if j < int(t[i]): new_flag = 1
                     
-                ans += dfs(s, index + 1,
-                           odd + add_odd,
-                           even + add_even,
-                           (remainder*10 + digit) % k,
-                           tight and digit == int(s[index]),
-                           leadingZero and digit == 0)
+                if j % 2:
+                    ans += dp(i+1, new_flag, (rest * 10 + j) % k, odd_even+1)
+                else:
+                    ans += dp(i+1, new_flag, (rest * 10 + j) % k, odd_even-1)
             return ans
         
-        return dfs(str(high), 0, 0, 0, 0, True, True) - dfs(str(low - 1), 0, 0, 0, 0, True, True)
+        t = str(high)
+        h = dp(0, 0, 0, 0)
+        dp.cache_clear()
+        t = str(low - 1)
+        l = dp(0, 0, 0, 0)
+        return h - l
         
 class SolutionBruteforce:
     def numberOfBeautifulIntegers(self, low: int, high: int, k: int) -> int:
