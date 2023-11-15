@@ -1,48 +1,22 @@
 class Solution:
     def numberOfBeautifulIntegers(self, low: int, high: int, k: int) -> int:
-        memo = {}
-        digits = []
+        def f(upper):
+            s = str(upper)
+            @cache
+            def dfs(i, val, diff, isLimit, isNum):
+                if i == len(s):
+                    return int(isNum and val == 0 and diff == 0)
+                res = 0
+                if not isNum: res = dfs(i+1, val, diff, False, False)
+                bottom = 0 if isNum else 1
+                top = int(s[i]) if isLimit else 9
+                for d in range(bottom, top + 1):
+                    res += dfs(i+1, (val * 10 + d) % k, diff + d % 2 * 2 - 1, isLimit and d == top, True)
+                return res
+            return dfs(0, 0, 0, True, False)
+        return f(high) - f(low-1)
         
-        def solve(pos, odd, even, rem, flag, lead_zero):
-            if odd > len(digits) or even > len(digits):
-                return 0
-            if pos < 0:
-                return int(odd == even and rem == 0)
 
-            inputs = (pos, odd, even, rem, flag, lead_zero)
-            if inputs in memo:
-                return memo[inputs]
-
-            answer = 0
-            for digit in range(digits[pos] + 1 if flag else 10):
-                new_odd = odd
-                new_even = even
-                if not lead_zero or digit > 0:
-                    if digit % 2 == 1: 
-                        new_odd += 1
-                    else: 
-                        new_even += 1
-                new_rem = (rem * 10 + digit) % k
-                new_flag = flag and (digit == digits[pos])
-                new_lead_zero = lead_zero and (digit == 0)
-                answer += solve(pos-1, new_odd, new_even, new_rem, new_flag, new_lead_zero)
-
-            memo[inputs] = answer
-            return answer
-
-        def process(n):
-            memo.clear()
-            digits.clear()
-
-            while n > 0:
-                digits.append(n % 10)
-                n //= 10
-
-            return solve(len(digits)-1, 0, 0, 0, True, True)
-
-        return process(high) - process(low-1)
-        
-        
 class Solution2:
     def numberOfBeautifulIntegers(self, low: int, high: int, k: int) -> int:
         
@@ -74,6 +48,46 @@ class Solution2:
         t = str(low - 1)
         l = dp(0, 0, 0, 0)
         return h - l
+
+class Solution3:
+    def numberOfBeautifulIntegers(self, low: int, high: int, k: int) -> int:
+        
+        memo = [0,0,0]
+
+        def countEvenOdd(n, evenCnt, oddCnt): 
+
+            if n > high:
+                return
+
+            even_count = 0
+            odd_count = 0
+
+            if memo[0] != n:
+                memo[0] = n
+            while n: 
+                if ((n % 10) % 2): 
+                    memo[1] += 1
+                else: 
+                    memo[2] += 1
+
+                n //= 10
+            
+            if even_count == odd_count:
+                ans.append(num)
+            
+            
+            countEvenOdd(n+k, )
+            return (even_count == odd_count)
+
+        num = low
+        if low%k:
+            num = low+(k - low%k)
+        
+        ans = []
+        countEvenOdd(num)
+        
+        return len(ans)
+
 
 class SolutionBruteforce:
     def numberOfBeautifulIntegers(self, low: int, high: int, k: int) -> int:
@@ -132,4 +146,14 @@ class SolutionBruteforce:
 
     DP
     f(n) = f(r)-f(l-1)
+
+    low digit count
+        -> ex 1 1 4 7 4 8 3 6 4 7
+                               +3
+        -> ex 1 1 4 7 4 8 3 6 5 0 check k + 1 digit and update even/odd count  
+
+        worse
+              1 9 9 9 9 9 9 9 9 9                             
+    hight digit count
+    k digit count 
 '''        
