@@ -10,8 +10,8 @@ class Solution:
             s1 = heapq.heappop(stones)
             s2 = heapq.heappop(stones)
 
-            if s1 != s2:
-                heapq.heappush(stones, s1-s2)
+            #if s1 != s2:
+            heapq.heappush(stones, s1-s2)
         
         return -heapq.heappop(stones) if stones else 0
 
