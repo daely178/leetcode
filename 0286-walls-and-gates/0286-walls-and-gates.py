@@ -10,10 +10,12 @@ class Solution:
         cols = len(rooms[0])
 
         rq = []
+        visited = []
         for r in range(rows):
             for c in range(cols):
                 if rooms[r][c] == 0:
                     rq.append((0,r,c))
+                    visited.append((r,c))
         
         while rq:
             distance, r, c = heapq.heappop(rq)
@@ -25,6 +27,7 @@ class Solution:
                     if candidate < rooms[nr][nc]:
                         rooms[nr][nc] = candidate
                         heapq.heappush(rq, (candidate, nr,nc))
+                        visited.append((nr,nc))
 '''
     1 append gates to queue
     2 bfs from gate to inf positions to calculate distance from each gate
