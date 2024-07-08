@@ -24,7 +24,7 @@ class Solution:
                 nr = nr + r
                 nc = nc + c
                 if rows > nr >= 0 and cols > nc >= 0:
-                    if candidate < rooms[nr][nc]:
+                    if candidate < rooms[nr][nc]  and (nr,nc) not in visited:
                         rooms[nr][nc] = candidate
                         heapq.heappush(rq, (candidate, nr,nc))
                         visited.append((nr,nc))
