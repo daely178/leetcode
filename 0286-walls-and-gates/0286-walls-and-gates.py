@@ -9,14 +9,14 @@ class Solution:
         rows = len(rooms)
         cols = len(rooms[0])
 
-        hq = []
+        rq = []
         for r in range(rows):
             for c in range(cols):
                 if rooms[r][c] == 0:
-                    hq.append((0,r,c))
+                    rq.append((0,r,c))
         
-        while hq:
-            distance, r, c = heapq.heappop(hq)
+        while rq:
+            distance, r, c = heapq.heappop(rq)
             candidate = distance + 1
             for nr, nc in [(1,0), (-1,0), (0,1), (0,-1)]:
                 nr = nr + r
@@ -24,7 +24,7 @@ class Solution:
                 if rows > nr >= 0 and cols > nc >= 0:
                     if candidate < rooms[nr][nc]:
                         rooms[nr][nc] = candidate
-                        heapq.heappush(hq, (candidate, nr,nc))
+                        heapq.heappush(rq, (candidate, nr,nc))
 '''
     1 append gates to queue
     2 bfs from gate to inf positions to calculate distance from each gate
