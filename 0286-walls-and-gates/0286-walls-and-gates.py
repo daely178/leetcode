@@ -27,9 +27,8 @@ class Solution:
                     rooms[nr][nc] = candidate
                     heapq.heappush(hq, (candidate, nr,nc))
 '''
-    brute force
-    dfs
-        return distance
+    1 append gates to heap
+    2 
 
     
 '''        
