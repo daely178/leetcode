@@ -21,14 +21,23 @@ class Solution:
             for nr, nc in [(1,0), (-1,0), (0,1), (0,-1)]:
                 nr = nr + r
                 nc = nc + c
-                if nr < 0 or nr >= rows or nc < 0 or nc >= cols:
-                    continue
-                if candidate < rooms[nr][nc]:
-                    rooms[nr][nc] = candidate
-                    heapq.heappush(hq, (candidate, nr,nc))
+                if rows > nr >= 0 and cols > nc >= 0:
+                    if candidate < rooms[nr][nc]:
+                        rooms[nr][nc] = candidate
+                        heapq.heappush(hq, (candidate, nr,nc))
 '''
-    1 append gates to heap
-    2 
+    1 append gates to queue
+    2 bfs from gate to inf positions to calculate distance from each gate
+    3 do not visit
 
+Q = 
+    [  0, -1,  0,INF],
+    [INF,INF,INF, -1],
+    [INF, -1,INF, -1],
+    [0,   -1,INF,INF]]
     
+    [. 3, -1,  0,  1],
+    [  2,  2,  1, -1],
+    [. 1, -1,  2, -1],
+    [0,   -1,  3,  4]]    
 '''        
