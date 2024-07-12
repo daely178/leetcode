@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0070-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/daely178/leetcode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/daely178/leetcode/tree/master/0213-house-robber-ii) |
@@ -52,4 +53,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0070-climbing-stairs) |
+## Two Pointers
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
+## String
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
