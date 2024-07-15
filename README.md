@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0070-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0070-climbing-stairs) |
+| [0091-decode-ways](https://github.com/daely178/leetcode/tree/master/0091-decode-ways) |
 | [0198-house-robber](https://github.com/daely178/leetcode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/daely178/leetcode/tree/master/0213-house-robber-ii) |
 | [0416-partition-equal-subset-sum](https://github.com/daely178/leetcode/tree/master/0416-partition-equal-subset-sum) |
@@ -65,5 +66,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0091-decode-ways](https://github.com/daely178/leetcode/tree/master/0091-decode-ways) |
 | [0647-palindromic-substrings](https://github.com/daely178/leetcode/tree/master/0647-palindromic-substrings) |
 <!---LeetCode Topics End-->
