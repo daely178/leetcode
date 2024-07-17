@@ -16,9 +16,12 @@ class Solution:
     nums = [1,5,11,5]
     half_sum = 22/2 = 11
 
-    1
+    1       0 1 2 3 4 5 6 7 8 9 10 11
+        dp [T F F F F F F F F F  F F]
+            T T F F F F F F F F  F F
+                    F F F F F F  F F
         11~1
-        dp[11] or dp[11-11]    
+        dp[0] or dp[0]    
 
     brute force
     half_sum = sum//2 # 2 partitions sum is same as total sum
