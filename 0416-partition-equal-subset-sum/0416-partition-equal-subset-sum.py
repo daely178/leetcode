@@ -5,7 +5,7 @@ class Solution:
             return False
         
         total = sum(nums)//2
-        dp = [True]+[False]*total
+        dp = [True]+[False]*(total+1)
         
         for num in nums:
             for curr in range(total, num-1, -1):
@@ -13,6 +13,13 @@ class Solution:
         return dp[total]
 
 '''
+    nums = [1,5,11,5]
+    half_sum = 22/2 = 11
+
+    1
+        11~1
+        dp[11] or dp[11-11]    
+
     brute force
     half_sum = sum//2 # 2 partitions sum is same as total sum
     
