@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0130-surrounded-regions](https://github.com/daely178/leetcode/tree/master/0130-surrounded-regions) |
+| [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 | [0198-house-robber](https://github.com/daely178/leetcode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/daely178/leetcode/tree/master/0213-house-robber-ii) |
 | [0286-walls-and-gates](https://github.com/daely178/leetcode/tree/master/0286-walls-and-gates) |
@@ -72,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0091-decode-ways](https://github.com/daely178/leetcode/tree/master/0091-decode-ways) |
+| [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 | [0647-palindromic-substrings](https://github.com/daely178/leetcode/tree/master/0647-palindromic-substrings) |
 ## Tree
 |  |
@@ -81,4 +83,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0199-binary-tree-right-side-view](https://github.com/daely178/leetcode/tree/master/0199-binary-tree-right-side-view) |
+## Greedy
+|  |
+| ------- |
+| [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
+## Sorting
+|  |
+| ------- |
+| [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 <!---LeetCode Topics End-->
