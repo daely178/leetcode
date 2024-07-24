@@ -6,24 +6,27 @@ class Solution:
 
         intervals.sort(key=lambda x:x[0])
 
-        pq = []
-        heapq.heappush(pq, intervals[0][1])
+        mh = []
+        heapq.heappush(mh, intervals[0][1])
 
         for interval in intervals[1:]:
-                        
-            if pq[0] <= interval[0]:
-                heapq.heappop(pq)
-            heapq.heappush(pq, interval[1])
-                    
+            if mh[0] <= interval[0]:
+                heapq.heappop(mh)
 
+            heapq.heappush(mh, interval[1])
         
-        return len(pq)
-
-
+        return len(mh)
 
 '''
-    [0,                 30],
-        [5,10],
+    check overlap
+    [0,                 30], <- room 1
+        [5,10],              <- room 2
                  [15,20]
 
+    
+
+    q [ 30, 10, ]
+    if 30 <= 5
+
+    
 '''        
