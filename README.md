@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/daely178/leetcode/tree/master/0053-maximum-subarray) |
 | [0057-insert-interval](https://github.com/daely178/leetcode/tree/master/0057-insert-interval) |
 | [0130-surrounded-regions](https://github.com/daely178/leetcode/tree/master/0130-surrounded-regions) |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0053-maximum-subarray](https://github.com/daely178/leetcode/tree/master/0053-maximum-subarray) |
 | [0070-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0070-climbing-stairs) |
 | [0091-decode-ways](https://github.com/daely178/leetcode/tree/master/0091-decode-ways) |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
@@ -116,4 +118,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/daely178/leetcode/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
