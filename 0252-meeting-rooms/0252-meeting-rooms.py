@@ -15,7 +15,7 @@ class Solution:
                 return False
             heapq.heappush(mh, interval[1])
 
-        return True if len(mh)==1 else False
+        return True# if len(mh)==1 else False
 
 
 '''
