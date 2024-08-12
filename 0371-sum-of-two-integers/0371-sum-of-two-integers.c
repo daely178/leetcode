@@ -7,8 +7,8 @@ int getSum(int a, int b) {
         b = carry<<1;
     }
 
-    if (b>0)
+//    if (b>0)
         return a&0xffffffff;
-    else
-        return a;        
+//    else
+//        return a;        
 }
