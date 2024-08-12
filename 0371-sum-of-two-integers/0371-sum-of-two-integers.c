@@ -4,11 +4,8 @@ int getSum(int a, int b) {
     while (b&0xffffffff){
         carry = a&b;
         a = a^b;
-        b = carry<<1;
+        b = (unsigned int )(carry<<1);
     }
 
-//    if (b>0)
-        return a;//&0xffffffff;
-//    else
-//        return a;        
+    return a;    
 }
