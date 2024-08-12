@@ -139,6 +139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/daely178/leetcode/tree/master/0053-maximum-subarray) |
+| [0191-number-of-1-bits](https://github.com/daely178/leetcode/tree/master/0191-number-of-1-bits) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -151,4 +152,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/daely178/leetcode/tree/master/0062-unique-paths) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0191-number-of-1-bits](https://github.com/daely178/leetcode/tree/master/0191-number-of-1-bits) |
 <!---LeetCode Topics End-->
