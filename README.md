@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/daely178/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/daely178/leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0322-coin-change](https://github.com/daely178/leetcode/tree/master/0322-coin-change) |
+| [0338-counting-bits](https://github.com/daely178/leetcode/tree/master/0338-counting-bits) |
 | [0392-is-subsequence](https://github.com/daely178/leetcode/tree/master/0392-is-subsequence) |
 | [0416-partition-equal-subset-sum](https://github.com/daely178/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
@@ -156,4 +157,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0191-number-of-1-bits](https://github.com/daely178/leetcode/tree/master/0191-number-of-1-bits) |
+| [0338-counting-bits](https://github.com/daely178/leetcode/tree/master/0338-counting-bits) |
 <!---LeetCode Topics End-->
