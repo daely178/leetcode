@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0213-house-robber-ii](https://github.com/daely178/leetcode/tree/master/0213-house-robber-ii) |
 | [0252-meeting-rooms](https://github.com/daely178/leetcode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0286-walls-and-gates](https://github.com/daely178/leetcode/tree/master/0286-walls-and-gates) |
 | [0300-longest-increasing-subsequence](https://github.com/daely178/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/daely178/leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0062-unique-paths](https://github.com/daely178/leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0070-climbing-stairs) |
+| [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 ## Memoization
 |  |
 | ------- |
@@ -123,15 +125,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 | [0252-meeting-rooms](https://github.com/daely178/leetcode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
 ## Binary Search
 |  |
 | ------- |
+| [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/daely178/leetcode/tree/master/0300-longest-increasing-subsequence) |
 ## Hash Table
 |  |
 | ------- |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
+| [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 ## Trie
 |  |
 | ------- |
@@ -159,5 +164,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0190-reverse-bits](https://github.com/daely178/leetcode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/daely178/leetcode/tree/master/0191-number-of-1-bits) |
+| [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0338-counting-bits](https://github.com/daely178/leetcode/tree/master/0338-counting-bits) |
 <!---LeetCode Topics End-->
