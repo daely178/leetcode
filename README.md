@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/daely178/leetcode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/daely178/leetcode/tree/master/0053-maximum-subarray) |
 | [0057-insert-interval](https://github.com/daely178/leetcode/tree/master/0057-insert-interval) |
+| [0066-plus-one](https://github.com/daely178/leetcode/tree/master/0066-plus-one) |
 | [0130-surrounded-regions](https://github.com/daely178/leetcode/tree/master/0130-surrounded-regions) |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/daely178/leetcode/tree/master/0152-maximum-product-subarray) |
@@ -84,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0007-reverse-integer](https://github.com/daely178/leetcode/tree/master/0007-reverse-integer) |
 | [0048-rotate-image](https://github.com/daely178/leetcode/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/daely178/leetcode/tree/master/0062-unique-paths) |
+| [0066-plus-one](https://github.com/daely178/leetcode/tree/master/0066-plus-one) |
 | [0070-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0070-climbing-stairs) |
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/daely178/leetcode/tree/master/0371-sum-of-two-integers) |
