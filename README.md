@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/daely178/leetcode/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/daely178/leetcode/tree/master/0066-plus-one) |
 | [0070-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0070-climbing-stairs) |
+| [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/daely178/leetcode/tree/master/0371-sum-of-two-integers) |
 ## Memoization
@@ -100,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0392-is-subsequence](https://github.com/daely178/leetcode/tree/master/0392-is-subsequence) |
 | [0647-palindromic-substrings](https://github.com/daely178/leetcode/tree/master/0647-palindromic-substrings) |
@@ -146,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/daely178/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
+| [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 ## Trie
 |  |
