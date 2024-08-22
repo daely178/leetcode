@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0747-min-cost-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [1036-rotting-oranges](https://github.com/daely178/leetcode/tree/master/1036-rotting-oranges) |
+| [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -150,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
 | [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
+| [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
 ## Trie
 |  |
 | ------- |
@@ -180,4 +182,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0338-counting-bits](https://github.com/daely178/leetcode/tree/master/0338-counting-bits) |
 | [0371-sum-of-two-integers](https://github.com/daely178/leetcode/tree/master/0371-sum-of-two-integers) |
+## Design
+|  |
+| ------- |
+| [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
+## Counting
+|  |
+| ------- |
+| [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
 <!---LeetCode Topics End-->
