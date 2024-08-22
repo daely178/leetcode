@@ -1,33 +1,36 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         
-        n = len(matrix)
-        m = len(matrix[0])
+        rows = len(matrix)
+        cols = len(matrix[0])
         ans = []
-        UP = 1
+        left,right,up,down = 0, cols-1, 0, rows-1
 
-        def dfs(i,j, heading):
-
-            if i<n and i>=0 and j<m and j>=0 and matrix[i][j] != '$':
-                ans.append(matrix[i][j])
-                matrix[i][j] = '$'
-
-                if j+1>=i:
-                    dfs(i, j+1, UP)
-                dfs(i+1,j,0)
-                dfs(i,j-1,0)
-                dfs(i-1,j,0)
-
-
-        dfs(0,0, 0)
+        while len(ans)<rows*cols:
+            for i in range(left, right+1):
+                ans.append(matrix[up][i])
+            up += 1
+            for i in range(up, down+1):
+                ans.append(matrix[i][right])
+            right -= 1
+            if up <= down:
+                for i in range(right, left-1, -1):
+                    ans.append(matrix[down][i])         
+                down -= 1
+            if left <= right:
+                for i in range(down, up-1, -1):
+                    ans.append(matrix[i][left])         
+                left += 1                   
 
         return ans
 '''
- 1  2  3  4  5  6
- 18 19          7
- 17             8
- 16             9
- 15 14 13 12 11 10
+     0. 1. 2  3  4  5
+    
+0    1  2  3  4  5  6
+1    18 19          7 
+2    17             8
+3    16             9
+4    15 14 13 12 11 10
 
 
 '''                
