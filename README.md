@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0048-rotate-image](https://github.com/daely178/leetcode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/daely178/leetcode/tree/master/0053-maximum-subarray) |
+| [0054-spiral-matrix](https://github.com/daely178/leetcode/tree/master/0054-spiral-matrix) |
 | [0057-insert-interval](https://github.com/daely178/leetcode/tree/master/0057-insert-interval) |
 | [0066-plus-one](https://github.com/daely178/leetcode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/daely178/leetcode/tree/master/0073-set-matrix-zeroes) |
@@ -40,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/daely178/leetcode/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/daely178/leetcode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/daely178/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0130-surrounded-regions](https://github.com/daely178/leetcode/tree/master/0130-surrounded-regions) |
 | [0286-walls-and-gates](https://github.com/daely178/leetcode/tree/master/0286-walls-and-gates) |
@@ -190,4 +192,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
+## Simulation
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/daely178/leetcode/tree/master/0054-spiral-matrix) |
 <!---LeetCode Topics End-->
