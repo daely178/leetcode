@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/daely178/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0072-edit-distance](https://github.com/daely178/leetcode/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/daely178/leetcode/tree/master/0091-decode-ways) |
 | [0097-interleaving-string](https://github.com/daely178/leetcode/tree/master/0097-interleaving-string) |
@@ -149,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/daely178/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0073-set-matrix-zeroes](https://github.com/daely178/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
 | [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
@@ -196,4 +198,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/daely178/leetcode/tree/master/0054-spiral-matrix) |
+## Backtracking
+|  |
+| ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/daely178/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 <!---LeetCode Topics End-->
