@@ -121,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 | [0392-is-subsequence](https://github.com/daely178/leetcode/tree/master/0392-is-subsequence) |
 | [0647-palindromic-substrings](https://github.com/daely178/leetcode/tree/master/0647-palindromic-substrings) |
+| [1304-longest-happy-string](https://github.com/daely178/leetcode/tree/master/1304-longest-happy-string) |
 ## Tree
 |  |
 | ------- |
@@ -135,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [1304-longest-happy-string](https://github.com/daely178/leetcode/tree/master/1304-longest-happy-string) |
 ## Sorting
 |  |
 | ------- |
@@ -172,6 +174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [1304-longest-happy-string](https://github.com/daely178/leetcode/tree/master/1304-longest-happy-string) |
 ## Prefix Sum
 |  |
 | ------- |
