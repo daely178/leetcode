@@ -1,28 +1,27 @@
 class Solution:
     def longestDiverseString(self, a: int, b: int, c: int) -> str:
-        map = {'a':-a,'b':-b,'c':-c}
-        heap = []
-        for key,val in map.items():
-            if val!=0:
-                heap.append((val,key))
-        heapify(heap)
-        ans = ''
-        while heap:
-            count,char = heappop(heap)
-    
-            if len(ans)>1 and ans[-1]==ans[-2]==char:
-                if heap:
-                    count2,char2 = heappop(heap)
-                    heappush(heap,(count,char))
-                    ans+=char2
-                    if count2!=-1:
-                        heappush(heap,(count2+1,char2))
+        dic = {'a':a, 'b':b, 'c':c}
+        hq = []
+        res = ''
+        for key, val in dic.items():
+            if val > 0:
+                heapq.heappush(hq, (-val, key))
+        
+        while hq:
+            count, ch = heapq.heappop(hq)
+            if len(res)>1 and res[-1] == res[-2] == ch:
+                if hq:
+                    count2, ch2 = heapq.heappop(hq)                    
+                    res += ch2                    
+                    if count2 != -1:                        
+                        heapq.heappush(hq, (count2+1, ch2))
+                    heapq.heappush(hq, (count, ch))
             else:
-                ans+=char
-                if count!=-1:
-                    heappush(heap,(count+1,char))
-        return(ans)
-            
+                res += ch
+                if count != -1:
+                    heapq.heappush(hq, (count+1, ch))
+
+        return res
 
 '''
     a = 1, b = 1, c = 7
