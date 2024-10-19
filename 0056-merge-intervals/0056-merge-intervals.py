@@ -2,15 +2,18 @@ class Solution:
 
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         merged = []
-
+        
         intervals.sort()
-
-        merged.append(intervals[0])
-        for curr in intervals[1:]:
-            if merged[-1][1] < curr[0]:
-                merged.append(curr)
-            else:
-                merged[-1][1] = max(merged[-1][1], curr[1])
+        current = intervals[0]
+        
+        #merged.append(intervals[0])
+        for interval in intervals[1:]:
+            if current[1] >= interval[0]:
+                current[1] = max(current[1], interval[1])
+            else:                
+                merged.append(current)
+                current = interval
+        merged.append(current)         
         return merged
 
 '''
