@@ -3,20 +3,13 @@ class Solution:
         if len(intervals) == 0:
             return True
 
-        intervals.sort(key=lambda x:x[0])        
-
-        mh = []
-        heapq.heappush(mh, intervals[0][1])
-
+        intervals.sort()
+        curr = intervals[0]
         for interval in intervals[1:]:
-            if mh[0] <= interval[0]:
-                heapq.heappop(mh)
-            else:
+            if curr[1] > interval[0]:
                 return False
-            heapq.heappush(mh, interval[1])
-
-        return True# if len(mh)==1 else False
-
+            curr = interval
+        return True
 
 '''
     [[0,30],[5,10],[15,20]]
@@ -24,4 +17,10 @@ class Solution:
     0                   30 
         5   10              compare start and end
                 15  20
+    
+    [[0,30],
+               [60,          240],
+                   [90,120]]
+
+      
 '''        
