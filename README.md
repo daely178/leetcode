@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/daely178/leetcode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/daely178/leetcode/tree/master/0213-house-robber-ii) |
 | [0217-contains-duplicate](https://github.com/daely178/leetcode/tree/master/0217-contains-duplicate) |
+| [0238-product-of-array-except-self](https://github.com/daely178/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0252-meeting-rooms](https://github.com/daely178/leetcode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
@@ -188,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [0238-product-of-array-except-self](https://github.com/daely178/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0303-range-sum-query-immutable](https://github.com/daely178/leetcode/tree/master/0303-range-sum-query-immutable) |
 ## Combinatorics
