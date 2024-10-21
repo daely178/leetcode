@@ -3,7 +3,8 @@ class Solution:
         
         if len(intervals) == 0:
             return 0
-        intervals.sort(key=lambda x:x[1])
+
+        intervals.sort(key=lambda x:x[0])
 
         mh = []
         heapq.heappush(mh, intervals[0][1])
@@ -13,7 +14,7 @@ class Solution:
                 heapq.heappop(mh)
 
             heapq.heappush(mh, interval[1])
-
+        
         return len(mh)
 
 '''
