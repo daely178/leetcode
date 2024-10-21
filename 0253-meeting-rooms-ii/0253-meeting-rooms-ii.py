@@ -6,8 +6,10 @@ class Solution:
         intervals.sort(key=lambda x:x[1])
 
         mh = []
-        for interval in intervals:
-            if mh and mh[0] <= interval[0]:
+        heapq.heappush(mh, intervals[0][1])
+
+        for interval in intervals[1:]:
+            if mh[0] <= interval[0]:
                 heapq.heappop(mh)
 
             heapq.heappush(mh, interval[1])
