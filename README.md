@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/daely178/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/daely178/leetcode/tree/master/0015-3sum) |
 | [0033-search-in-rotated-sorted-array](https://github.com/daely178/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0048-rotate-image](https://github.com/daely178/leetcode/tree/master/0048-rotate-image) |
@@ -116,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0011-container-with-most-water](https://github.com/daely178/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/daely178/leetcode/tree/master/0015-3sum) |
 | [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
@@ -146,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/daely178/leetcode/tree/master/0011-container-with-most-water) |
 | [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
