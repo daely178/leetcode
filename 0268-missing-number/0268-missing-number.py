@@ -1,8 +1,8 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-        n = len(nums)+1
-        s = ((n-1)*n)>>1
+        n = len(nums)
+        s = (n*(n+1))>>1
         for num in nums:
-            s-=num
+            s -= num
         return s
         
