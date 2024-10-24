@@ -5,7 +5,7 @@ class Solution:
         for val in nums:
             best = max(val+prevprev, prev)
             prev,prevprev = best, prev
-        return prev
+        return best
 
 '''
     constrains : alert if robbing adjacent houses
