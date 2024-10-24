@@ -1,10 +1,10 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
 
-        prev, prevprev = 0,0
-        for val in nums:
-            best = max(val+prevprev, prev)
-            prev,prevprev = best, prev
+        p, pp = 0, 0
+        for num in nums:
+            best = max(num+pp, p)
+            p,pp = best, p
         return best
 
 '''
