@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0307-range-sum-query-mutable](https://github.com/daely178/leetcode/tree/master/0307-range-sum-query-mutable) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/daely178/leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0322-coin-change](https://github.com/daely178/leetcode/tree/master/0322-coin-change) |
+| [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0416-partition-equal-subset-sum](https://github.com/daely178/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0747-min-cost-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0747-min-cost-climbing-stairs) |
@@ -165,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0252-meeting-rooms](https://github.com/daely178/leetcode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
+| [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
 ## Binary Search
 |  |
@@ -182,6 +184,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
 | [0217-contains-duplicate](https://github.com/daely178/leetcode/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
+| [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
 ## Trie
 |  |
@@ -194,11 +197,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/daely178/leetcode/tree/master/0053-maximum-subarray) |
 | [0190-reverse-bits](https://github.com/daely178/leetcode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/daely178/leetcode/tree/master/0191-number-of-1-bits) |
+| [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/daely178/leetcode/tree/master/0023-merge-k-sorted-lists) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [1304-longest-happy-string](https://github.com/daely178/leetcode/tree/master/1304-longest-happy-string) |
 ## Prefix Sum
 |  |
@@ -227,6 +232,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
 ## Simulation
 |  |
@@ -258,4 +264,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/daely178/leetcode/tree/master/0023-merge-k-sorted-lists) |
+## Bucket Sort
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
+## Quickselect
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
