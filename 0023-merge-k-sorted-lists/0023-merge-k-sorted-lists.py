@@ -7,18 +7,17 @@ class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
 
         vals = []
-        head = ListNode()
-        dummy = head
         for l in lists:
             while l:
                 vals.append(l.val)
                 l = l.next
         vals.sort()
+        dummy = ListNode()
+        tmp = dummy
         for val in vals:
-            dummy.next = ListNode(val)
-            dummy = dummy.next
-
-        return head.next
+            tmp.next = ListNode(val)
+            tmp = tmp.next
+        return dummy.next
         
         
 
