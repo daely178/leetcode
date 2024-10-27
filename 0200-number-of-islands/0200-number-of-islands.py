@@ -1,22 +1,24 @@
 class Solution:
     def numIslands(self, grid):
-        if not grid:
-            return 0
+        numIslands = 0
+        rows = len(grid)
+        cols = len(grid[0])
 
-        islands = 0
+        def dfs(i,j):
 
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                if grid[i][j] == '1':
-                    self.dfs(grid, i, j)
-                    islands += 1
-        return islands
-
-    def dfs(self, grid, i, j):
-        if i<0 or i>=len(grid) or j <0 or j>=len(grid[0]) or grid[i][j] != '1':
-            return
-        grid[i][j] = 'x'
-        self.dfs(grid, i+1, j)
-        self.dfs(grid, i-1, j)
-        self.dfs(grid, i,j+1)
-        self.dfs(grid, i,j-1)
+            if i<0 or j<0 or i>=rows or j>=cols or grid[i][j] != "1":
+                return
+            grid[i][j] = 'x'
+            
+            dfs(i+1, j)
+            dfs(i,j+1)
+            dfs(i-1, j)
+            dfs(i, j-1)
+        
+        for row in range(rows):
+            for col in range(cols):
+                if grid[row][col] == "1":
+                    dfs(row, col)
+                    numIslands += 1
+        
+        return numIslands
