@@ -140,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/daely178/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/daely178/leetcode/tree/master/0015-3sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/daely178/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0125-valid-palindrome](https://github.com/daely178/leetcode/tree/master/0125-valid-palindrome) |
 | [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0295-find-median-from-data-stream](https://github.com/daely178/leetcode/tree/master/0295-find-median-from-data-stream) |
@@ -154,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0072-edit-distance](https://github.com/daely178/leetcode/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/daely178/leetcode/tree/master/0091-decode-ways) |
 | [0097-interleaving-string](https://github.com/daely178/leetcode/tree/master/0097-interleaving-string) |
+| [0125-valid-palindrome](https://github.com/daely178/leetcode/tree/master/0125-valid-palindrome) |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
 | [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 | [0242-valid-anagram](https://github.com/daely178/leetcode/tree/master/0242-valid-anagram) |
