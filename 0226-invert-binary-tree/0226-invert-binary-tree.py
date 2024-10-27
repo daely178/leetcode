@@ -23,9 +23,9 @@ class Solution:
         if not root:
             return None
 
-        queue = collections.deque([root])
+        queue = [root]
         while queue:
-            curr = queue.popleft()
+            curr = queue.pop()
             curr.left, curr.right = curr.right, curr.left
             if curr.left:
                 queue.append(curr.left)
