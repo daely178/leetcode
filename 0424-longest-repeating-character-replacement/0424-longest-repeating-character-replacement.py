@@ -1,26 +1,21 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         
-        start = 0
+        start, longest, maxfreq = 0,0,0
         freq = defaultdict(int)
-        max_freq = 0
-        longest = 0
 
-        for e in range(len(s)):
-            freq[s[e]] = freq[s[e]] + 1
-            max_freq = max(max_freq, freq[s[e]])
+        for i in range(len(s)):
+            freq[s[i]] += 1
+            maxfreq = max(maxfreq, freq[s[i]])
+            window = i-start+1
 
-            if (e-start+1-max_freq) > k: # valid check
+            if (window-maxfreq) > k:
                 freq[s[start]] -= 1
                 start += 1
             else:
-                longest = e-start+1
-
-            # AABABBA
-            #longest = e-start+1
-            #longest = max(longest, (e-start+1))
-
+                longest = window
         return longest
+
 '''
 brute force
 - dictionary
