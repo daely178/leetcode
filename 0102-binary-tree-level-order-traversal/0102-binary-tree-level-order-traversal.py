@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def levelOrder2(self, root: Optional[TreeNode]) -> List[List[int]]:
 
         ans = []
 
@@ -20,9 +20,30 @@ class Solution:
         return ans
 
 
-    def levelOrder2(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         
-        queue = deque([(root, 0)])
+        ans = []
+        queue = deque([(root,0)])
+        while queue:
+            node, depth = queue.popleft()
+            if node:
+                if len(ans) == depth:
+                    ans.append([])
+                ans[depth].append(node.val)
+                if node.left:
+                    queue.append((node.left, depth+1))
+                if node.right:
+                    queue.append((node.right, depth+1))                    
+
+        return ans
+
+'''
+    inorder - left root right
+    preorder - root left right
+    postorder - left right root
+    levelorder - root left right
+
+queue = deque([(root, 0)])
         ans = []
 
         while queue:
@@ -36,13 +57,5 @@ class Solution:
                 if node.left:
                     queue.append((node.left, depth+1))
                 if node.right:
-                    queue.append((node.right, depth+1))
-
-        return ans
-
-'''
-    inorder - left root right
-    preorder - root left right
-    postorder - left right root
-    levelorder - root left right
+                    queue.append((node.right, depth+1))    
 '''
