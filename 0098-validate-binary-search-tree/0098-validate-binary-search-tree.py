@@ -12,7 +12,7 @@ class Solution:
                 return True
             if node.val <= low or node.val >= high:
                 return False
-            return levelorder(node.right, node.val, high) and levelorder(node.left, low, node.val)
+            return levelorder(node.left, low, node.val) and levelorder(node.right, node.val, high)
         
         return levelorder(root)
 
