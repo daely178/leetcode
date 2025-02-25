@@ -23,7 +23,9 @@ class Solution {
 public:
     bool isSubPath(ListNode* head, TreeNode* root) {
         if(!root) return false;
-        return checkPath(root, head);
+        if(dfs(root, head)) return true;
+
+        return isSubPath(head, root->left) || isSubPath(head, root->right);
     }
     bool checkPath(TreeNode* node, ListNode* head) {
         if(!node) return false;
