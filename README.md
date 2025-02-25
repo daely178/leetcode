@@ -83,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0261-graph-valid-tree](https://github.com/daely178/leetcode/tree/master/0261-graph-valid-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/daely178/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0572-subtree-of-another-tree](https://github.com/daely178/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [1484-linked-list-in-binary-tree](https://github.com/daely178/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Union Find
 |  |
 | ------- |
@@ -187,6 +188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/daely178/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/daely178/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0572-subtree-of-another-tree](https://github.com/daely178/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [1484-linked-list-in-binary-tree](https://github.com/daely178/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
@@ -200,6 +202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/daely178/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/daely178/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0572-subtree-of-another-tree](https://github.com/daely178/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [1484-linked-list-in-binary-tree](https://github.com/daely178/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Greedy
 |  |
 | ------- |
@@ -316,6 +319,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0019-remove-nth-node-from-end-of-list](https://github.com/daely178/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/daely178/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0023-merge-k-sorted-lists](https://github.com/daely178/leetcode/tree/master/0023-merge-k-sorted-lists) |
+| [1484-linked-list-in-binary-tree](https://github.com/daely178/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Recursion
 |  |
 | ------- |
