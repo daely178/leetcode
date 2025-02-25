@@ -131,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0273-integer-to-english-words](https://github.com/daely178/leetcode/tree/master/0273-integer-to-english-words) |
 | [0371-sum-of-two-integers](https://github.com/daely178/leetcode/tree/master/0371-sum-of-two-integers) |
+| [1585-the-kth-factor-of-n](https://github.com/daely178/leetcode/tree/master/1585-the-kth-factor-of-n) |
 ## Memoization
 |  |
 | ------- |
@@ -355,4 +356,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/daely178/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/daely178/leetcode/tree/master/0424-longest-repeating-character-replacement) |
+## Number Theory
+|  |
+| ------- |
+| [1585-the-kth-factor-of-n](https://github.com/daely178/leetcode/tree/master/1585-the-kth-factor-of-n) |
 <!---LeetCode Topics End-->
