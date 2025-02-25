@@ -149,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/daely178/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0392-is-subsequence](https://github.com/daely178/leetcode/tree/master/0392-is-subsequence) |
 | [0647-palindromic-substrings](https://github.com/daely178/leetcode/tree/master/0647-palindromic-substrings) |
+| [1894-merge-strings-alternately](https://github.com/daely178/leetcode/tree/master/1894-merge-strings-alternately) |
 ## String
 |  |
 | ------- |
@@ -168,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0647-palindromic-substrings](https://github.com/daely178/leetcode/tree/master/0647-palindromic-substrings) |
 | [1250-longest-common-subsequence](https://github.com/daely178/leetcode/tree/master/1250-longest-common-subsequence) |
 | [1304-longest-happy-string](https://github.com/daely178/leetcode/tree/master/1304-longest-happy-string) |
+| [1894-merge-strings-alternately](https://github.com/daely178/leetcode/tree/master/1894-merge-strings-alternately) |
 ## Tree
 |  |
 | ------- |
