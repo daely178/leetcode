@@ -32,20 +32,18 @@ class Solution:
 
         while stack:
             curr, visited = stack.pop()
-
             if visited:
                 left = heights[curr.left]
                 right = heights[curr.right]
-
-                if abs(right-left) > 1:
+                if abs(left-right) > 1:
                     return False
                 heights[curr] = max(left,right)+1
             else:
-                stack.append([curr,True])
-                if curr.right:
-                    stack.append([curr.right, False])
+                stack.append([curr, True])
                 if curr.left:
                     stack.append([curr.left, False])
+                if curr.right:
+                    stack.append([curr.right, False])
         return True
 
 '''
