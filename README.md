@@ -250,6 +250,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/daely178/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/daely178/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
+| [0146-lru-cache](https://github.com/daely178/leetcode/tree/master/0146-lru-cache) |
 | [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
 | [0217-contains-duplicate](https://github.com/daely178/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/daely178/leetcode/tree/master/0242-valid-anagram) |
@@ -301,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/daely178/leetcode/tree/master/0146-lru-cache) |
 | [0295-find-median-from-data-stream](https://github.com/daely178/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0303-range-sum-query-immutable](https://github.com/daely178/leetcode/tree/master/0303-range-sum-query-immutable) |
 | [0307-range-sum-query-mutable](https://github.com/daely178/leetcode/tree/master/0307-range-sum-query-mutable) |
@@ -325,6 +327,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0019-remove-nth-node-from-end-of-list](https://github.com/daely178/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/daely178/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0023-merge-k-sorted-lists](https://github.com/daely178/leetcode/tree/master/0023-merge-k-sorted-lists) |
+| [0146-lru-cache](https://github.com/daely178/leetcode/tree/master/0146-lru-cache) |
 | [1484-linked-list-in-binary-tree](https://github.com/daely178/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Recursion
 |  |
@@ -383,4 +386,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/daely178/leetcode/tree/master/0094-binary-tree-inorder-traversal) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/daely178/leetcode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
