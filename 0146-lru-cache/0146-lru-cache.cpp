@@ -29,14 +29,21 @@ public:
     }
     
     void put(int key, int value) {
+        Node *old = nullptr;
         if(dic.find(key) != dic.end()){
             Node *old = dic[key];
             remove(old);
         }
 
-        Node *node = new Node(key, value);
-        dic[key] = node;
-        add(node);
+        if(old != nullptr){
+            old->val = value;
+            old->key = key;
+        }
+        else {
+            old = new Node(key, value);
+        }
+        dic[key] = old;
+        add(old);
 
         if(dic.size() > capacity) {
             Node *nodeToDel = head->next;
