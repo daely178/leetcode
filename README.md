@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/daely178/leetcode/tree/master/0015-3sum) |
 | [0033-search-in-rotated-sorted-array](https://github.com/daely178/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0048-rotate-image](https://github.com/daely178/leetcode/tree/master/0048-rotate-image) |
+| [0049-group-anagrams](https://github.com/daely178/leetcode/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/daely178/leetcode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/daely178/leetcode/tree/master/0054-spiral-matrix) |
 | [0056-merge-intervals](https://github.com/daely178/leetcode/tree/master/0056-merge-intervals) |
@@ -162,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/daely178/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/daely178/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/daely178/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0049-group-anagrams](https://github.com/daely178/leetcode/tree/master/0049-group-anagrams) |
 | [0072-edit-distance](https://github.com/daely178/leetcode/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/daely178/leetcode/tree/master/0091-decode-ways) |
 | [0097-interleaving-string](https://github.com/daely178/leetcode/tree/master/0097-interleaving-string) |
@@ -222,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/daely178/leetcode/tree/master/0015-3sum) |
+| [0049-group-anagrams](https://github.com/daely178/leetcode/tree/master/0049-group-anagrams) |
 | [0056-merge-intervals](https://github.com/daely178/leetcode/tree/master/0056-merge-intervals) |
 | [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 | [0217-contains-duplicate](https://github.com/daely178/leetcode/tree/master/0217-contains-duplicate) |
@@ -247,6 +250,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/daely178/leetcode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/daely178/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/daely178/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0049-group-anagrams](https://github.com/daely178/leetcode/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/daely178/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/daely178/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
