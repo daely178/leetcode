@@ -253,6 +253,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/daely178/leetcode/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/daely178/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/daely178/leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0138-copy-list-with-random-pointer](https://github.com/daely178/leetcode/tree/master/0138-copy-list-with-random-pointer) |
 | [0139-word-break](https://github.com/daely178/leetcode/tree/master/0139-word-break) |
 | [0146-lru-cache](https://github.com/daely178/leetcode/tree/master/0146-lru-cache) |
 | [0202-happy-number](https://github.com/daely178/leetcode/tree/master/0202-happy-number) |
@@ -331,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0019-remove-nth-node-from-end-of-list](https://github.com/daely178/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/daely178/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0023-merge-k-sorted-lists](https://github.com/daely178/leetcode/tree/master/0023-merge-k-sorted-lists) |
+| [0138-copy-list-with-random-pointer](https://github.com/daely178/leetcode/tree/master/0138-copy-list-with-random-pointer) |
 | [0146-lru-cache](https://github.com/daely178/leetcode/tree/master/0146-lru-cache) |
 | [1484-linked-list-in-binary-tree](https://github.com/daely178/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Recursion
