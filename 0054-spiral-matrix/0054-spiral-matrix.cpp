@@ -6,14 +6,22 @@ public:
         int cols = matrix[0].size();
         int up=0, left=0, right=cols-1, down=rows-1;
 
+        /*
+                  up
+            left     right
+                 down
+            
+            matrix[row][col]
+        */
+
         while(ans.size() < rows*cols) {
             for(int col=left; col<=right; col++){
                 ans.push_back(matrix[up][col]);
             }
-            for(int row=up+1; row<=down; row++) {
+            for(int row=up+1; row<=down; row++){
                 ans.push_back(matrix[row][right]);
             }
-            if(up!=down){
+            if(up!=down) {
                 for(int col=right-1; col>=left; col--){
                     ans.push_back(matrix[down][col]);
                 }
