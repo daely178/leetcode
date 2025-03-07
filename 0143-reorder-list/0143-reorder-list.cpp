@@ -11,34 +11,33 @@
 class Solution {
 public:
     void reorderList(ListNode* head) {
-        ListNode* slow, * fast;
-        slow = head;
-        fast = head;
-
-        while(fast && fast->next){
+        // find mid
+        ListNode *slow=head, *fast=head;
+        while(fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
         }
 
-        ListNode* curr = slow;
-        ListNode* prev=nullptr, *next=nullptr;
-        while(curr) {
+        // reverse 2nd half
+        ListNode *prev=nullptr, *next;
+        ListNode *curr=slow;
+        while(curr){
             next = curr->next;
             curr->next = prev;
             prev = curr;
             curr = next;
-        }
+        }        
 
+        // mix
         ListNode* first = head;
         ListNode* second = prev;
-        ListNode* tmp;
         while(second->next) {
-            tmp = first->next;
+            ListNode* tmp = first->next;
             first->next = second;
             first = tmp;
             tmp = second->next;
             second->next = first;
             second = tmp;
-        }   
+        }
     }
 };
