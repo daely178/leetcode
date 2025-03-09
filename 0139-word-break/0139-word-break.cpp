@@ -1,31 +1,22 @@
 class Solution {
 public:
-    vector<int> memo;
-    vector<string> wordDict;
-    string s;
     bool wordBreak(string s, vector<string>& wordDict) {
-        memo = vector(s.length(), -1);
-        this->wordDict = wordDict;
-        this->s = s;
-        return dp(s.length()-1);
-    }
-    bool dp(int i) {
-        if(i<0) return true;
-        if(memo[i] != -1) {
-            return memo[i]==1;
-        }
-        for(string word : wordDict){
-            int curSize = word.length();
-            if(i-curSize+1<0){
-                continue;
-            }
-            if(s.substr(i-curSize+1, curSize) == word && dp(i-curSize)) {
-                memo[i] = 1;
-                return true;
+        vector<bool> dp(s.length());
+        for(int i=0; i<s.length(); i++) {
+            for(string word : wordDict) {
+                if(i<word.length()-1) {
+                    continue;
+                }
+
+                if(i==word.length()-1 || dp[i-word.length()]){
+                    if(s.substr(i-word.length()+1, word.length()) == word) {
+                        dp[i] = true;
+                        break;
+                    }
+                }
             }
         }
-        memo[i] = 0;
-        return false;
+        return dp[s.length()-1];
     }
 };
 
