@@ -5,16 +5,17 @@ public:
         return cal(nums, target);
     }
 private:
-    unordered_map<int,int> memo;
+    unordered_map<int, int> memo;
+
     int cal(vector<int>& nums, int target) {
-        if(target == 0){
+        if(target == 0) {
             return 1;
         }
-        if(memo.find(target)!=memo.end()){
+        if(memo.find(target) != memo.end()){
             return memo[target];
         }
-        int result=0;
-        for(int num : nums){
+        int result = 0;
+        for(int num : nums) {
             if(target-num>=0){
                 result += cal(nums, target-num);
             }
