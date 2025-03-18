@@ -149,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0273-integer-to-english-words](https://github.com/daely178/leetcode/tree/master/0273-integer-to-english-words) |
 | [0371-sum-of-two-integers](https://github.com/daely178/leetcode/tree/master/0371-sum-of-two-integers) |
+| [0670-maximum-swap](https://github.com/daely178/leetcode/tree/master/0670-maximum-swap) |
 | [1585-the-kth-factor-of-n](https://github.com/daely178/leetcode/tree/master/1585-the-kth-factor-of-n) |
 ## Memoization
 |  |
@@ -239,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/daely178/leetcode/tree/master/0179-largest-number) |
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0670-maximum-swap](https://github.com/daely178/leetcode/tree/master/0670-maximum-swap) |
 | [1304-longest-happy-string](https://github.com/daely178/leetcode/tree/master/1304-longest-happy-string) |
 | [2487-optimal-partition-of-string](https://github.com/daely178/leetcode/tree/master/2487-optimal-partition-of-string) |
 ## Sorting
