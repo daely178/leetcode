@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/daely178/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0747-min-cost-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [1036-rotting-oranges](https://github.com/daely178/leetcode/tree/master/1036-rotting-oranges) |
+| [1829-maximum-units-on-a-truck](https://github.com/daely178/leetcode/tree/master/1829-maximum-units-on-a-truck) |
 | [1909-buildings-with-an-ocean-view](https://github.com/daely178/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 | [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
 ## Breadth-First Search
@@ -244,6 +245,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0670-maximum-swap](https://github.com/daely178/leetcode/tree/master/0670-maximum-swap) |
 | [1304-longest-happy-string](https://github.com/daely178/leetcode/tree/master/1304-longest-happy-string) |
+| [1829-maximum-units-on-a-truck](https://github.com/daely178/leetcode/tree/master/1829-maximum-units-on-a-truck) |
 | [2487-optimal-partition-of-string](https://github.com/daely178/leetcode/tree/master/2487-optimal-partition-of-string) |
 ## Sorting
 |  |
@@ -261,6 +263,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0314-binary-tree-vertical-order-traversal](https://github.com/daely178/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [1829-maximum-units-on-a-truck](https://github.com/daely178/leetcode/tree/master/1829-maximum-units-on-a-truck) |
 ## Binary Search
 |  |
 | ------- |
