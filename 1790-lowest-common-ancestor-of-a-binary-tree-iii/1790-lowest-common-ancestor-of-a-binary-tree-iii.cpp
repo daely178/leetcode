@@ -12,15 +12,26 @@ public:
 class Solution {
 public:
     Node* lowestCommonAncestor(Node* p, Node * q) {
-        Node* a = p;
-        Node* b = q;
-        while(a != b) {
-            a = a == nullptr ? q : a->parent;
-            b = b == nullptr ? p : b->parent;  
+        Node *a = p;
+        Node *b = q;
+        while(a!=b) {
+            a = a==NULL ? q : a->parent;
+            b = b==NULL ? p : b->parent;
         }
-        return b;        
+        return a;
+
+
     }
 };
+/*
+        r
+               L
+            p       
+                  q
 
-// 4 2 5 3 N 0 1 3 N
-// 0 1 3 N 4 2 5 3 N
+    p to r = x
+    q to r = y
+    L to r = z
+    p to q through L = x + y - z
+    q to p through L = y + x - z
+*/
