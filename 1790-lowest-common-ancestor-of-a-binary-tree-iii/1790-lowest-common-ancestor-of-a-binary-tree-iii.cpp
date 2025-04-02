@@ -12,15 +12,40 @@ public:
 class Solution {
 public:
     Node* lowestCommonAncestor(Node* p, Node * q) {
-        Node *a = p;
-        Node *b = q;
-        while(a!=b) {
-            a = a==NULL ? q : a->parent;
-            b = b==NULL ? p : b->parent;
+        if (p==q){
+            return p;
         }
-        return a;
 
+        int pd=0, qd=0;
+        Node *temp = p;
+        while(temp) {
+            temp=temp->parent;
+            pd++;
+        }
+        temp = q;
+        while(temp){
+            temp = temp->parent;
+            qd++;
+        }
+        if(pd > qd){
+            int i=0, diff = pd-qd;
+            while(i<diff) {
+                p = p->parent;
+                i++;
+            }
+        } else {
+            int i=0, diff = qd-pd;
+            while(i<diff) {
+                q = q->parent;
+                i++;
+            }
+        }
 
+        while(p!=q){
+            p = p->parent;
+            q = q->parent;
+        }
+        return p;
     }
 };
 /*
