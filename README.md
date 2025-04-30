@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/daely178/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0560-subarray-sum-equals-k](https://github.com/daely178/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0747-min-cost-climbing-stairs](https://github.com/daely178/leetcode/tree/master/0747-min-cost-climbing-stairs) |
+| [0994-prison-cells-after-n-days](https://github.com/daely178/leetcode/tree/master/0994-prison-cells-after-n-days) |
 | [1036-rotting-oranges](https://github.com/daely178/leetcode/tree/master/1036-rotting-oranges) |
 | [1829-maximum-units-on-a-truck](https://github.com/daely178/leetcode/tree/master/1829-maximum-units-on-a-truck) |
 | [1909-buildings-with-an-ocean-view](https://github.com/daely178/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
@@ -156,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0273-integer-to-english-words](https://github.com/daely178/leetcode/tree/master/0273-integer-to-english-words) |
 | [0371-sum-of-two-integers](https://github.com/daely178/leetcode/tree/master/0371-sum-of-two-integers) |
 | [0670-maximum-swap](https://github.com/daely178/leetcode/tree/master/0670-maximum-swap) |
+| [0994-prison-cells-after-n-days](https://github.com/daely178/leetcode/tree/master/0994-prison-cells-after-n-days) |
 | [1585-the-kth-factor-of-n](https://github.com/daely178/leetcode/tree/master/1585-the-kth-factor-of-n) |
 ## Memoization
 |  |
@@ -309,6 +311,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/daely178/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0560-subarray-sum-equals-k](https://github.com/daely178/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/daely178/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0994-prison-cells-after-n-days](https://github.com/daely178/leetcode/tree/master/0994-prison-cells-after-n-days) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/daely178/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
 | [2487-optimal-partition-of-string](https://github.com/daely178/leetcode/tree/master/2487-optimal-partition-of-string) |
@@ -355,6 +358,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0338-counting-bits](https://github.com/daely178/leetcode/tree/master/0338-counting-bits) |
 | [0371-sum-of-two-integers](https://github.com/daely178/leetcode/tree/master/0371-sum-of-two-integers) |
+| [0994-prison-cells-after-n-days](https://github.com/daely178/leetcode/tree/master/0994-prison-cells-after-n-days) |
 ## Design
 |  |
 | ------- |
