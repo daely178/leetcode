@@ -1,21 +1,20 @@
 class Solution {
 public:
     vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-        priority_queue<vector<int>> maxHeap;
-        vector<vector<int>> result(k);
+        vector<vector<int>> res(k);
+        std::priority_queue<vector<int>> q;
 
-        for (auto& p : points) {
-            maxHeap.push({p[0]*p[0]+p[1]*p[1], p[0],p[1]});
-            if (maxHeap.size() > k ) {
-                maxHeap.pop();
-            }
+        for(auto p : points) {
+            q.push({p[0]*p[0]+p[1]*p[1], p[0], p[1]});
+            if(q.size() > k)
+                q.pop();
         }
 
-        for (int i=0; i<k; i++) {
-            vector<int> top = maxHeap.top();
-            maxHeap.pop();
-            result[i] = {top[1], top[2]};
+        for(int i=0; i<k; i++){
+            vector<int> p = q.top();
+            q.pop();
+            res[i] = {p[1], p[2]};
         }
-        return result;
+        return res;
     }    
 };
