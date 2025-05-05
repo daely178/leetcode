@@ -11,33 +11,20 @@
  */
 class Solution {
 public:
-    bool isBalanced(TreeNode* root) {
-        if(!root)
-            return true;
+    int getHeight(TreeNode* node) {
+        if(node == NULL){
+            return 0;
+        }
+        int left = getHeight(node->left);
+        int right = getHeight(node->right);
         
-        std::stack<pair<TreeNode*, bool>> st;
-        st.push({root, false});
-
-        std::unordered_map<TreeNode*, int> heights;
-
-        while(!st.empty()){
-            auto [node, visited] = st.top();
-            st.pop();
-            if(visited){
-                auto leftheight = node->left ? heights[node->left] : 0;
-                auto rightheight = node->right ? heights[node->right] : 0;
-                if(std::abs(leftheight-rightheight) > 1)
-                    return false;
-                heights[node] = std::max(leftheight,rightheight)+1;
-            }
-            else {
-                st.push({node, true});
-                if(node->left)
-                    st.push({node->left, false});
-                if(node->right)
-                    st.push({node->right, false});
-            }
-        } 
-        return true;
+        return max(left,right)+1;
+    }
+    bool isBalanced(TreeNode* root) {
+        if (root == NULL)
+            return true;
+        int left = getHeight(root->left);
+        int right = getHeight(root->right);
+        return abs(left-right) <= 1 && isBalanced(root->left) && isBalanced(root->right);
     }
 };
