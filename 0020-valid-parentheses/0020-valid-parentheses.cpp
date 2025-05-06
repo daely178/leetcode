@@ -1,21 +1,28 @@
 class Solution {
 public:
     bool isValid(string s) {
-        stack<char> st;
-        for(int i=0; i<s.size(); i++){
-            if(s[i] == '(' || s[i] == '{' || s[i] == '[')
-                st.push(s[i]);
-            else {
-                if(s[i] == ')' || s[i] == '}' || s[i] == ']'){
-                    if( st.empty() ||
-                        (s[i] == ')' && st.top() != '(') ||
-                        (s[i] == '}' && st.top() != '{') ||
-                        (s[i] == ']' && st.top() != '['))
-                        return false;
+        std::stack<char> st;
+        
+        for(char c : s) {
+            if(c == '{' || c == '[' || c == '(') {
+                st.push(c);
+            } else if( c == '}' || c == ']' || c== ')'){
+                if (!st.empty() &&
+                    (st.top() == '{' && c == '}'||
+                    st.top() == '[' && c == ']' ||
+                    st.top() == '(' && c == ')' ) ){
+                    st.pop();
+                } else {
+                    return false;
                 }
-                st.pop();
             }
         }
+
         return st.empty();
+        /*
+            { [ ( push to stack
+            } ] ) check stack and pop
+            check stack size == 0 at the end
+        */
     }
 };
