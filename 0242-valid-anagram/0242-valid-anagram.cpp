@@ -1,18 +1,18 @@
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        std::map<char, int> smap;
-        map<char, int> freq;
-        for(char c : s)
-            freq[c] += 1;
-        for(char c: t)
-            freq[c] -= 1;
-
-        for(auto f : freq){
-            if(f.second)
-                return false;
+        std::map<char, int> frequency;
+        for(auto c : s){
+            frequency[c]++;
         }
-
+        for(auto c:t){
+            frequency[c]--;
+        }
+        for(auto f : frequency) {
+            if(f.second !=0){
+                return false;
+            }
+        }
         return true;
     }
 };
