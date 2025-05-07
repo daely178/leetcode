@@ -205,6 +205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0227-basic-calculator-ii](https://github.com/daely178/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/daely178/leetcode/tree/master/0242-valid-anagram) |
 | [0273-integer-to-english-words](https://github.com/daely178/leetcode/tree/master/0273-integer-to-english-words) |
+| [0383-ransom-note](https://github.com/daely178/leetcode/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/daely178/leetcode/tree/master/0392-is-subsequence) |
 | [0424-longest-repeating-character-replacement](https://github.com/daely178/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0647-palindromic-substrings](https://github.com/daely178/leetcode/tree/master/0647-palindromic-substrings) |
@@ -311,6 +312,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/daely178/leetcode/tree/master/0268-missing-number) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/daely178/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0383-ransom-note](https://github.com/daely178/leetcode/tree/master/0383-ransom-note) |
 | [0424-longest-repeating-character-replacement](https://github.com/daely178/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0560-subarray-sum-equals-k](https://github.com/daely178/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/daely178/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -376,6 +378,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0383-ransom-note](https://github.com/daely178/leetcode/tree/master/0383-ransom-note) |
 | [2139-detect-squares](https://github.com/daely178/leetcode/tree/master/2139-detect-squares) |
 ## Simulation
 |  |
