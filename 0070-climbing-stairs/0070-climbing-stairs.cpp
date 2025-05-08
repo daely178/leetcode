@@ -1,23 +1,34 @@
 class Solution {
 public:
     int climbStairs(int n) {
-        vector<int> memo(n+1, 0);
-        return climb_stairs(0, n, memo);
-    }
-    int climb_stairs(int i, int n, vector<int> &memo)
-    {
-        if(i>n)
-        {
-            return 0;
-        }
-        if(i==n)
-        {
+        if ( n == 1)
             return 1;
-        }
-        if(memo[i] > 0 ){
-            return memo[i];
-        }
-        memo[i] = climb_stairs(i+1, n, memo) + climb_stairs(i+2,n, memo);
-        return memo[i];
+        
+        int dp[n+1];
+        dp[1] = 1;
+        dp[2] = 2;
+        for(int i=3; i<=n; i++)
+            dp[i] = dp[i-1] + dp[i-2];
+        
+        return dp[n];
     }
 };
+
+/*
+    n = 2
+    1 1
+    2
+
+    n = 3
+            1            2 
+        1.     2.    1     2
+    1.     2 1
+  1               1   
+    4
+     
+
+    1 2 3 4 5
+    1 2 3 5
+
+    dp[i] = dp[i-1] + dp[i-2]
+*/
