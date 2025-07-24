@@ -11,22 +11,23 @@
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        vector<int> val_list;
-        for(auto l : lists) {
-            ListNode *tmp = l;
-            while(tmp) {
-                val_list.push_back(tmp->val);
-                tmp = tmp->next;
+        std::vector<int> vals;
+        
+        for(auto ls : lists) {
+            ListNode* sub = ls;
+            while(sub){
+                vals.push_back(sub->val);
+                sub = sub->next;
             }
         }
 
-        ListNode head;
-        ListNode *tmp = &head;
-        sort(val_list.begin(), val_list.end());
-        for(auto val : val_list) {
+        sort(vals.begin(), vals.end());
+        ListNode dummy;
+        ListNode *tmp = &dummy;
+        for(auto val : vals) {
             tmp->next = new ListNode(val);
             tmp = tmp->next;
         }
-        return head.next;
+        return dummy.next;
     }
 };
