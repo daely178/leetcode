@@ -4,34 +4,39 @@ public:
         if(nums.size() < 3)
             return {};
         
-        set<std::vector<int>> res;
+        vector<std::vector<int>> res;
         sort(nums.begin(), nums.end());
         for(int i=0; i<nums.size(); i++) {
             int l=i+1;
             int r=nums.size()-1;
+
+            if(i>0 && nums[i] == nums[i-1]) {
+                continue;
+            }
+            if(nums[i] > 0) {
+                break;       
+            }     
             while(l<r) {
                 int target = nums[i] + nums[l] + nums[r];
-                if(target > 0)
+                if(target > 0) {
                     r-=1;
-                else if(target < 0)
+                }
+                else if(target < 0) {
                     l+=1;
+                }
                 else {
-                    res.insert({nums[i], nums[l], nums[r]});
+                    res.push_back({nums[i], nums[l], nums[r]});
                     l++;
                     r--;
+                    while(l<r && nums[l]==nums[l-1]) {
+                        l++;
+                    }
+                    while(l<r && nums[r]==nums[r+1]) {
+                        r--;
+                    }
                 }
             }            
         }
-        return vector<vector<int>>(res.begin(), res.end());
+        return res;
     }
 };
-
-/*
-    nums[i] + nums[j] + nums[k] = 0
-    i!=j!=k
-
-    brute force
-    for i=0 i<n
-        for j=i+1 j<n-1;
-            for k=j+1 k<n-2;
-*/
