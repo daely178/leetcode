@@ -1,11 +1,11 @@
 class Solution {
 public:
     int numIslands(vector<vector<char>>& grid) {
-        int islands=0;
+        int islands = 0;
         for(int i=0; i<grid.size(); i++) {
-            for(int j=0; j<grid[0].size(); j++){
-                if(grid[i][j] == '1') {
-                    dfs(i,j,grid);
+            for(int j=0; j<grid[0].size(); j++) {
+                if(grid[i][j] == '1'){
+                    helper(grid, i,j);
                     islands++;
                 }
             }
@@ -13,20 +13,21 @@ public:
         return islands;
     }
 
-    void dfs(int r, int c, vector<vector<char>>&grid) {
-        if(r<0 || r>=grid.size() || c <0 || c>=grid[0].size() || grid[r][c]!='1')
+    void helper(vector<vector<char>>& grid, int r, int c){
+        if(r>=grid.size() || r<0 || c >= grid[0].size() || c < 0 || grid[r][c] != '1') {
             return;
-        grid[r][c] = 'x';
-        dfs(r+1, c, grid);
-        dfs(r-1, c, grid);
-        dfs(r, c+1, grid);
-        dfs(r, c-1, grid);
+        }
+        grid[r][c]='x';
+        helper(grid, r, c+1);
+        helper(grid, r, c-1);
+        helper(grid, r+1, c);
+        helper(grid, r-1, c);
     }
 };
 
 /*
-    looping and find the '1'
-    search connected 1's and mark 'x' not to visit again
-    make sure not to visit out of index
-    increase counter if there is no more
+
+search all corners and replace 1 with other char to show visited
+until helper returns
+
 */
