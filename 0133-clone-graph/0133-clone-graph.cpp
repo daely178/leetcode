@@ -23,32 +23,47 @@ class Solution {
 public:
     Node* cloneGraph(Node* node) {
 
-        if(!node) {
-            return node;
-        }
+       if(!node) {
+        return node;
+       }
+       queue<Node*> q;
+       q.push(node);
+       unordered_map<Node*, Node*> visited;
+       visited[node] = new Node(node->val, {});
 
-        unordered_map<Node*, Node*> visited;
-        queue<Node*> q;
-        q.push(node);
-        visited[node] = new Node(node->val, {});
-
-        while(!q.empty()) {
-            Node *n = q.front();
-            q.pop();
-
-            for(Node* neighbor : n->neighbors) {
-                if(visited.find(neighbor) == visited.end()) {
-                    visited[neighbor] = new Node(neighbor->val, {});
-                    q.push(neighbor);
-                }
-                visited[n]->neighbors.push_back(visited[neighbor]);
+       while(!q.empty()) {
+        Node* n = q.front();
+        q.pop();
+        for(auto neighbor : n->neighbors) {
+            if(visited.find(neighbor) == visited.end()) {
+                visited[neighbor] = new Node(neighbor->val, {});
+                q.push(neighbor);
             }
+            // connect newly created one to neighbors
+            visited[n]->neighbors.push_back(visited[neighbor]);
         }
-        return visited[node];
+       }
+       return visited[node];
     }
 };
 
 /*
 deep copy = create new instances
+Node : val, neighbors
+
+The number of nodes in the graph is in the range [0, 100].
+
+
+1 neighbors 2,3
+2 neighbors 1,3
+3 neighbors 2,4
+4 neighbors 1,3
+
+1 - 2
+|.  |
+4 - 3
+
+queue to add all node
+visited to check visited
 
 */
