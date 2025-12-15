@@ -22,25 +22,33 @@ public:
 class Solution {
 public:
     Node* cloneGraph(Node* node) {
-        queue<Node*> q;
-        unordered_map<Node*, Node*> visited;
 
         if(!node) {
             return node;
         }
-        visited[node] = new Node(node->val, {});
+
+        unordered_map<Node*, Node*> visited;
+        queue<Node*> q;
         q.push(node);
+        visited[node] = new Node(node->val, {});
+
         while(!q.empty()) {
             Node *n = q.front();
             q.pop();
-            for(Node *v : n->neighbors){
-                if(visited.find(v) == visited.end()){
-                    visited[v] = new Node(v->val, {});
-                    q.push(v);
+
+            for(Node* neighbor : n->neighbors) {
+                if(visited.find(neighbor) == visited.end()) {
+                    visited[neighbor] = new Node(neighbor->val, {});
+                    q.push(neighbor);
                 }
-                visited[n]->neighbors.push_back(visited[v]);
+                visited[n]->neighbors.push_back(visited[neighbor]);
             }
         }
         return visited[node];
     }
 };
+
+/*
+deep copy = create new instances
+
+*/
