@@ -10,6 +10,7 @@
  */
 class Solution {
 public:
+
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         ListNode dummy;
         ListNode *tmp = &dummy;
@@ -27,16 +28,8 @@ public:
             }
             tmp = tmp->next;
         }
-        while(l1) {
-            tmp->next = l1;
-            l1=l1->next;
-            tmp = tmp->next;
-        }
-        while(l2) {
-            tmp->next = l2;
-            l2 = l2->next;
-            tmp = tmp->next;
-        }
+
+        tmp->next = l1 ? l1 : l2;
 
         return dummy.next;
     }
