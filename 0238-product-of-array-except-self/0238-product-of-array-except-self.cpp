@@ -1,39 +1,37 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
-        if(nums.empty()) {
-            return vector<int>{};            
+        vector<int> left(nums.size());
+        vector<int> right(nums.size());
+
+        left[0]=1;
+        for(int i=1; i<nums.size(); i++) {
+            left[i] = left[i-1]*nums[i-1];
+        }
+        right[nums.size()-1]=1;
+        for(int i=nums.size()-2; i>=0; i--) {
+            right[i] = right[i+1]*nums[i+1];
         }
 
-        vector<int> res(nums.size());
-        int r_product=1;
-        res[0]=1;
-        for(int i=1; i<nums.size(); i++) {
-            res[i] = nums[i-1]*res[i-1];
+        vector<int> ret(nums.size());
+        for(int i=0; i<nums.size(); i++) {
+            ret[i] = left[i]*right[i];
         }
-        for(int i=nums.size()-1; i>=0; i--) {
-            res[i] = res[i]*r_product;
-            r_product *= nums[i];
-        }
-        return res;
+        return ret;
     }
 };
 
 /*
-[1,2,3,4]
+O(n) time without division
+32 bit
+[2,2,3,4]
+[24,24,16,12]
 
-left
- 1,1,2,6
-right
- 24,12,4,1
+  .... i ....
+  all product of i's left, i , all product of i's right
 
- 24,12,8,6
-
- 1,1,2,6
- R=1
- for n-1 -> 0
- ans[i] =nums[i]*R
- R*=nums[i]
-
-
+left = [1,]
+left[i] = left[i-1]*nums[i-1]
+right = [1,]
+right[i] = right[r+1]*nums[i+1]
 */
