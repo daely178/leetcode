@@ -1,17 +1,31 @@
 class Solution {
 public:
     int maxArea(vector<int>& height) {
-        int l=0, r=height.size()-1;
-        int res=0;
-        while(l<r) {
-            int maxArea = (r-l)*min(height[l], height[r]);
-            res = max(maxArea, res);
-            if(height[l] < height[r]) {
-                l++;
+        int area=0;
+        int left = 0, right = height.size()-1;
+        while(left<right) {
+            area = max(area, (min(height[left], height[right])*(right-left)));
+            if(height[left] > height[right]) {
+                right--;
             } else {
-                r--;
-            }
+                left++;
+            }            
         }
-        return res;
+        return area;
     }
 };
+
+
+/*
+Find two lines that contains the most water
+
+left ->  <- right
+
+if height[left] > height[right]
+    right--
+else
+    left++
+
+area = max(area, (right-left) * min(height[right], height[left]))
+
+*/
