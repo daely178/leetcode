@@ -80,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0314-binary-tree-vertical-order-traversal](https://github.com/daely178/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0322-coin-change](https://github.com/daely178/leetcode/tree/master/0322-coin-change) |
 | [0733-flood-fill](https://github.com/daely178/leetcode/tree/master/0733-flood-fill) |
+| [0743-network-delay-time](https://github.com/daely178/leetcode/tree/master/0743-network-delay-time) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/daely178/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1036-rotting-oranges](https://github.com/daely178/leetcode/tree/master/1036-rotting-oranges) |
 ## Matrix
@@ -115,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0314-binary-tree-vertical-order-traversal](https://github.com/daely178/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0572-subtree-of-another-tree](https://github.com/daely178/leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0733-flood-fill](https://github.com/daely178/leetcode/tree/master/0733-flood-fill) |
+| [0743-network-delay-time](https://github.com/daely178/leetcode/tree/master/0743-network-delay-time) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/daely178/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/daely178/leetcode/tree/master/1484-linked-list-in-binary-tree) |
 ## Union Find
@@ -376,6 +378,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0253-meeting-rooms-ii](https://github.com/daely178/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0295-find-median-from-data-stream](https://github.com/daely178/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/daely178/leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0743-network-delay-time](https://github.com/daely178/leetcode/tree/master/0743-network-delay-time) |
 | [1014-k-closest-points-to-origin](https://github.com/daely178/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1304-longest-happy-string](https://github.com/daely178/leetcode/tree/master/1304-longest-happy-string) |
 ## Prefix Sum
@@ -518,4 +521,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1014-k-closest-points-to-origin](https://github.com/daely178/leetcode/tree/master/1014-k-closest-points-to-origin) |
+## Graph Theory
+|  |
+| ------- |
+| [0743-network-delay-time](https://github.com/daely178/leetcode/tree/master/0743-network-delay-time) |
+## Shortest Path
+|  |
+| ------- |
+| [0743-network-delay-time](https://github.com/daely178/leetcode/tree/master/0743-network-delay-time) |
 <!---LeetCode Topics End-->
