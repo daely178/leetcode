@@ -2,40 +2,54 @@
 class Solution {
 public:
     int calculate(string s) {
-        stack<int> st;
-        int n = s.length();
         char op = '+';
-        long tmp = 0, res = 0;
-        for(int i=0; i<n; i++) {
-            if(isdigit(s[i])){
-                tmp = tmp*10 + s[i]-'0';
+        stack<int> st;
+        long num = 0;
+        for(int i=0; i<s.size(); i++) {
+            char c = s[i];
+            
+            if( c >= '0' && c <= '9') {
+                num = num*10 + c - '0';
             }
-            if(!isdigit(s[i]) && !iswspace(s[i]) || i==n-1) {
+
+            if(c == '-' || c== '*' || c=='/' || c=='+' || i==(s.size()-1)) {
                 if(op == '-') {
-                    st.push(-tmp);
-                }
-                else if(op == '+'){
+                    st.push(-num);
+                } else if(op == '+') {
+                    st.push(num);
+                }else if(op == '*') {
+                    int tmp = num*st.top();
+                    st.pop();
+                    st.push(tmp);
+                }else if(op == '/') {
+                    int tmp = st.top()/num;
+                    st.pop();
                     st.push(tmp);
                 }
-                else {
-                    int num = 0;
-                    if(op == '*') {
-                        num = st.top()*tmp;
-                    }
-                    else {
-                        num = st.top()/tmp;
-                    }
-                    st.pop();
-                    st.push(num);
-                }
-                op = s[i];
-                tmp = 0;
-            }
+                op = c;
+                num = 0;
+            } 
+
         }
-        while(!st.empty()){
-            res += st.top();
+
+        int ret = 0;
+        while(!st.empty()) {
+            ret += st.top();
             st.pop();
         }
-        return res;
+
+        return ret;
     }
 };
+
+/*
+given expression is valid
+integer range result
+
+integers to push to stack
+operand
+
+    stack
+        + 
+           num
+*/
