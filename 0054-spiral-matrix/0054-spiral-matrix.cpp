@@ -1,44 +1,44 @@
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        int LEFT=0, RIGHT=matrix[0].size()-1;
-        int UP=0, DOWN=matrix.size()-1;
+        
+        int left,right,up,down;
         vector<int> res;
 
-        while(LEFT<=RIGHT && UP<=DOWN) {
+        left = 0;
+        right = matrix[0].size()-1;
+        up = 0;
+        down = matrix.size()-1;
+
+        while(left<=right && up<=down) {
             int i=0;
-            // go RIGHT
-            i=LEFT;
-            while(i<=RIGHT){
-                res.push_back(matrix[UP][i++]); // 1,2 // UP = 1
-            }            
-            UP++;
-            if(UP > DOWN)
-                break;
 
-            // go DOWN
-            i=UP;
-            while(i<=DOWN){
-                res.push_back(matrix[i++][RIGHT]);
+            i=left;
+            while(i<=right) {
+                res.push_back(matrix[up][i++]);
             }
-            --RIGHT;            
-            if(LEFT > RIGHT)
+            i=++up;
+            if(up>down) {
                 break;
-
-            // go LEFT
-            i=RIGHT;
-            while(i>=LEFT){
-                res.push_back(matrix[DOWN][i--]);
             }
-            --DOWN;
-            if(UP > DOWN)
+            while(i<=down) {
+                res.push_back(matrix[i++][right]);
+            }
+            i=--right;
+            if(left>right) {
                 break;
-            // go UP
-            i=DOWN;
-            while(i>=UP){
-                res.push_back(matrix[i--][LEFT]);
-            }            
-            LEFT++;
+            }
+            while(i>=left) {
+                res.push_back(matrix[down][i--]);
+            }
+            i=--down;
+            if(up>down) {
+                break;
+            }
+            while(i>=up) {
+                res.push_back(matrix[i--][left]);
+            }
+            left++;
         }
 
         return res;
@@ -46,7 +46,16 @@ public:
 };
 
 /*
-    RIGHT DOWN LEFT UP
 
-    for()
+ right - down 
+  |       |
+  up   - left
+
+right - right max && visited
+down - bottom max && visited
+left - left min && visited
+up - up min && visited
+
+
+
 */
