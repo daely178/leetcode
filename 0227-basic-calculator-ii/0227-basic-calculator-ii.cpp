@@ -3,53 +3,50 @@ class Solution {
 public:
     int calculate(string s) {
         char op = '+';
-        stack<int> st;
-        long num = 0;
+        long temp = 0;
+        std::stack<int> st;
+
         for(int i=0; i<s.size(); i++) {
-            char c = s[i];
-            
-            if( c >= '0' && c <= '9') {
-                num = num*10 + c - '0';
+            const char c = s[i];
+            if(c >= '0' && c <= '9') {
+                temp = temp*10 + c-'0';
             }
 
-            if(c == '-' || c== '*' || c=='/' || c=='+' || i==(s.size()-1)) {
-                if(op == '-') {
-                    st.push(-num);
-                } else if(op == '+') {
-                    st.push(num);
-                }else if(op == '*') {
-                    int tmp = num*st.top();
+            if(c == '+' || c == '-' || c == '*' || c == '/' || i==(s.size()-1)) {
+
+                if(op == '+') {
+                    st.push(temp);
+                } else if ( op == '-') {
+                    st.push(-temp);
+                } else if( op == '*') {
+                    int top = st.top();
                     st.pop();
-                    st.push(tmp);
-                }else if(op == '/') {
-                    int tmp = st.top()/num;
+                    st.push(top*temp);
+                } else if(op == '/') {
+                    int top = st.top();
                     st.pop();
-                    st.push(tmp);
+                    st.push(top/temp);
                 }
                 op = c;
-                num = 0;
-            } 
-
+                temp = 0;
+            }
         }
 
-        int ret = 0;
+        int res = 0;
         while(!st.empty()) {
-            ret += st.top();
+            res += st.top();
             st.pop();
         }
 
-        return ret;
+        return res;
     }
 };
 
 /*
-given expression is valid
-integer range result
 
-integers to push to stack
-operand
-
-    stack
-        + 
-           num
+initial op = +
+stack
+3
+2
+* or / pop() * or / then push
 */
