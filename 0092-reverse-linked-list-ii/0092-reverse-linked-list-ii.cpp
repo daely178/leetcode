@@ -17,7 +17,7 @@ public:
         dummy->next = head;
         for(int i=0; i<left-1; i++) {
             prev = prev->next;
-        }        
+        }
 
         /*
             1->2->3->4->5
@@ -25,6 +25,10 @@ public:
         */
 
        ListNode* curr = prev->next;
+
+       // 1- 2 - 3 - 4 - 5
+       // 1- 3 - 2 - 4 - 5
+       // 1 - 4 - 3 - 2 - 5
 
         for (int i = 0; i < right - left; ++i) {
             ListNode* next = curr->next;
