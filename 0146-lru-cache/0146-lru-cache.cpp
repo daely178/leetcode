@@ -1,63 +1,74 @@
-struct Node{
-    int key;
-    int value;
-    Node *prev;
-    Node *next;
-    Node(int key=0, int value=0) : key(key), value(value), prev(nullptr), next(nullptr) {}
-};
-
 class LRUCache {
-public:
-    LRUCache(int capacity) {
-        this->capacity_ = capacity;
-        head->next = tail;
-        tail->prev =head;
-    }
-    
-    int get(int key) {
-        if(mp.find(key) == mp.end()) {
-            return -1;
-        }
-        Node *tmp = mp[key];
-        remove(tmp);
-        add(tmp);
+private:
+    struct Node {
+        Node *prev;
+        Node *next;
+        int value;
+        int key;
+        Node(int key=0, int value=0) : value(value), key(key), prev(nullptr), next(nullptr) {}
+    };
+    std::unordered_map<int, Node*> mp;
+    int capacity;
+    Node *head, *tail;
 
-        return tmp->value;
-    }
-    
-    void put(int key, int value) {        
-        if(mp.find(key) != mp.end()) {
-            Node *old = mp[key];
-            remove(old);
-        }
-        Node *tmp = new Node(key, value);
-        mp[key] = tmp;
-        add(tmp);
-
-        if(mp.size() > capacity_) {
-            Node *first = head->next;
-            remove(first);
-            mp.erase(first->key);
-        }        
-    }
 
     void add(Node *node) {
+        // head - last - tail
+        // head - last - node - tail
         Node *last = tail->prev;
         last->next = node;
         node->prev = last;
         node->next = tail;
-        tail->prev = node;        
+        tail->prev = node;
     }
 
     void remove(Node *node) {
+        // head - prev - node - next - tail
+        // head - prev - next - tail
+
         node->prev->next = node->next;
         node->next->prev = node->prev;
+
     }
-private:
-    int capacity_;
-    std::unordered_map<int, Node*> mp;
-    Node *head = new Node();
-    Node *tail = new Node();
+
+public:
+    LRUCache(int capacity) : capacity(capacity) {
+        
+        head = new Node();
+        tail = new Node();
+        head->next = tail;
+        tail->prev = head;
+    }
+
+    int get(int key) {
+        if(mp.find(key) != mp.end()) {
+            Node *node = mp[key];
+            remove(node);
+            add(node);
+            return node->value;
+        }
+        return -1;
+    }
+    
+    void put(int key, int value) {
+        if(mp.find(key) != mp.end()) {
+            Node *node = mp[key];
+            remove(node);
+            mp.erase(key);
+            delete node;
+        }
+
+        if(capacity == mp.size()) {
+            Node *lru = head->next;
+            remove(lru);
+            mp.erase(lru->key);
+            delete lru;
+        }
+
+        Node *node = new Node(key, value);
+        add(node);
+        mp[key] = node;        
+    }
 };
 
 /**
@@ -65,23 +76,14 @@ private:
  * LRUCache* obj = new LRUCache(capacity);
  * int param_1 = obj->get(key);
  * obj->put(key,value);
- */
 
 
- /*
+least recently used, O(1)
+hash map with linked to get from end and remove from start
 
-get() 
-return existing value for the key
-make it latest
+get return key value or -1
+update : remove and add to the end
+put : remove existing one if exist, remove first if full then add to the end
 
-put()
-insert value if key doesn't exist
-update value if key exist
-make it the latest
-
-0(1)
-
-Find key should be using map()
-double linked list to insert/remove/add to manage items with O(1)
 
  */
