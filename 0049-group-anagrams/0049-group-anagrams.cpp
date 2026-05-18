@@ -11,6 +11,7 @@ public:
         }
 
         vector<vector<string>> ans;
+        ans.reserve(strs.size());
 
         for(auto &[key, group] : groups) {
             ans.push_back(move(group));
