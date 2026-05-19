@@ -10,7 +10,7 @@ public:
             freq[num]++;
         }
 
-        MinHeap minHeap;
+        MinHeap minHeap(comp);
         for(auto& [num, count] : freq) {
             minHeap.push({count, num});
             if(minHeap.size() > k) {
