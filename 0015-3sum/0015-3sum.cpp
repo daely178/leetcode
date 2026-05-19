@@ -1,35 +1,81 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
+        int n=nums.size();
         sort(nums.begin(), nums.end());
-        int n = nums.size();
-        set<vector<int>> res;
-        vector<vector<int>> ans;
-        for(int i=0; i<n; ++i) {
-            int l=i+1, r=n-1;
-            while(l<r) {
-                int target = nums[i]+nums[l]+nums[r];
-                if(target == 0) {
-                    res.insert({nums[i], nums[l], nums[r]});
-                    l++;
-                    r--;
-                } else if(target < 0) {
-                    l++;
-                } else {
-                    r--;
-                }
-            }
-        }
-        for(auto c : res){
-            ans.push_back(c);
-        }
+        vector<vector<int>> result;
 
-        return ans;
+        for(int i=0; i<n; i++) {
+            
+            int j=i+1;
+            int k=n-1;
+
+            if(nums[i] > 0) {
+                break;
+            }
+            if(i>0 && nums[i] == nums[i-1]) {
+                continue;
+            }
+
+            while(j<k) {
+                int subSum = nums[j]+nums[k];
+
+                if(subSum + nums[i] > 0) {
+                    k--;
+                } else if (subSum + nums[i] < 0) {
+                    j++;
+                } else {
+                    result.push_back({nums[i], nums[j], nums[k]});
+
+                    while(j<k && nums[j] == nums[j+1]) j++;
+                    while(j<k && nums[k] == nums[k-1]) k--;
+
+                    j++;
+                    k--;                    
+                }
+            }            
+        }    
+        return result;    
     }
 };
 
 /*
-sort
+int n=num.size()
+sort(nums.begin(), nums.end())
+vector<vector<int>> result;
+
+for(int i=0; i<n; i++) {
+    
+    int j=i+1;
+    int k=n-1;
+
+    if(nums[i] > 0) {
+        break;
+    }
+    if(i>0 && nums[i] == nums[i-1]) {
+        continue;
+    }
+
+    int target = nums[i];
+    while(j<k) {
+        int subSum = nums[j]+nums[k];
+
+        if(subSum - nums[i] > 0) {
+            j++;
+        } else if (subSum - nums[i] < 0) {
+            k--;
+        } else {
+            result.push_back({nums[i], nums[j], nums[k]});
+
+            while(j<k && nums[j] == nums[j+1]) j++;
+            while(j<k && nums[k] == nums[k-1]) k--;
+        }
+
+        j++;
+        k--;
+    }
+    return result;
+}
 
 
 
