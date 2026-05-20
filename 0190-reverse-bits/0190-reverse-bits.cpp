@@ -2,16 +2,16 @@ class Solution {
 public:
     int reverseBits(int n) {
         
-        // 32 bits : 1bit sign, 31 bits : values
-
-        int reversed = 0;
-        for(int i=0; i<31; i++) {
+       // signed integer
+       // 1bit sign
+       uint32_t nn = static_cast<uint32_t>(n);
+       uint32_t reversed = 0;
+       for(int i=0; i<32; i++) {
             if(n&1) {
                 reversed |= (1<<(31-i));
             }
             n>>=1;
-        }
-
-        return reversed;
+       }
+       return static_cast<int>(reversed);
     }
 };
