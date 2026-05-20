@@ -2,25 +2,21 @@ class Solution {
 public:
     bool isValid(string s) {
         stack<char> st;
+        unordered_map<char, char> brackets {
+            {']','['}, {'}','{'}, {')','('}
+        };
 
         for(auto c : s) {
-            if(c == '(' || c == '[' || c == '{') {
+            if(brackets.count(c)) {
+                if(st.empty() || brackets[c] != st.top()) {
+                    return false;
+                }
+                st.pop();
+            } else {
                 st.push(c);
             }
-            if(c == ']' || c == ')' || c == '}') {
-                if(st.empty()) {
-                    return false;
-                }
-                char opened = st.top();
-                if( (c == ']' && opened == '[') ||
-                    (c == '}' && opened == '{') ||
-                    (c == ')' && opened == '(') ) {
-                        st.pop();
-                } else {
-                    return false;
-                }
-            }
         }
+            
         if(!st.empty()) {
             return false;
         }
