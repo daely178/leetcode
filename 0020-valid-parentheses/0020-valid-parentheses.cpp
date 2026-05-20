@@ -1,18 +1,21 @@
 class Solution {
 public:
     bool isValid(string s) {
+        stack<char> st;
 
-        std::stack<char> st;
-
-        for(const auto c : s) {
-            if(c == '{' || c == '[' || c == '(') {
+        for(auto c : s) {
+            if(c == '(' || c == '[' || c == '{') {
                 st.push(c);
-            } else if(c == '}' || c == ']' || c == ')') {
-                if( !st.empty() &&
-                   ((c == '}' && st.top() == '{') ||
-                   (c == ']' && st.top() == '[') ||
-                   (c == ')' && st.top() == '(')) ) {
-                    st.pop();
+            }
+            if(c == ']' || c == ')' || c == '}') {
+                if(st.empty()) {
+                    return false;
+                }
+                char opened = st.top();
+                if( (c == ']' && opened == '[') ||
+                    (c == '}' && opened == '{') ||
+                    (c == ')' && opened == '(') ) {
+                        st.pop();
                 } else {
                     return false;
                 }
@@ -26,10 +29,8 @@ public:
 };
 
 /*
-
-()[]{}
-
-if open, push to stack
-if close, check stack top
-
+()
+1. map : '[' : ']'
+2. stack open
+3. check stack top if close
 */
