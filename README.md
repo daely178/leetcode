@@ -541,4 +541,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/daely178/leetcode/tree/master/0232-implement-queue-using-stacks) |
+## Union-Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/daely178/leetcode/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
