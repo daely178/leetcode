@@ -1,73 +1,65 @@
 class LRUCache {
 private:
     struct Node {
+        int val;
+        int key;
         Node *prev;
         Node *next;
-        int value;
-        int key;
-        Node(int key=0, int value=0) : value(value), key(key), prev(nullptr), next(nullptr) {}
-    };
-    std::unordered_map<int, Node*> mp;
+        Node(int key=0, int val=0) : key(key), val(val), prev(nullptr), next(nullptr) {}
+    };    
+    unordered_map<int, Node*> mp;    
     int capacity;
-    Node *head, *tail;
-
-
-    void add(Node *node) {
-        // head - last - tail
-        // head - last - node - tail
-        Node *last = tail->prev;
-        last->next = node;
-        node->prev = last;
-        node->next = tail;
-        tail->prev = node;
-    }
-
+    Node *head;
+    Node *tail;
     void remove(Node *node) {
-        // head - prev - node - next - tail
-        // head - prev - next - tail
-
         node->prev->next = node->next;
         node->next->prev = node->prev;
-
     }
-
+    void addToFront(Node *node) {
+        node->next = head->next;
+        node->prev = head;
+        head->next->prev = node;
+        head->next = node;        
+    }
 public:
-    LRUCache(int capacity) : capacity(capacity) {
-        
+    LRUCache(int capacity) {
+        this->capacity = capacity;
         head = new Node();
         tail = new Node();
         head->next = tail;
         tail->prev = head;
     }
-
+    
     int get(int key) {
-        if(mp.find(key) != mp.end()) {
-            Node *node = mp[key];
-            remove(node);
-            add(node);
-            return node->value;
+        if(mp.find(key) == mp.end()) {
+            return -1;
         }
-        return -1;
+
+        // cache update
+        Node *node = mp[key];
+        remove(node);
+        addToFront(node);
+
+        return node->val;
     }
     
     void put(int key, int value) {
         if(mp.find(key) != mp.end()) {
             Node *node = mp[key];
+            node->val = value;
             remove(node);
-            mp.erase(key);
-            delete node;
+            addToFront(node);
+            return;
         }
-
         if(capacity == mp.size()) {
-            Node *lru = head->next;
-            remove(lru);
-            mp.erase(lru->key);
-            delete lru;
+            Node *lruNode = tail->prev;
+            remove(lruNode);            
+            mp.erase(lruNode->key);
+            delete lruNode;
         }
-
-        Node *node = new Node(key, value);
-        add(node);
-        mp[key] = node;        
+        Node *newNode = new Node(key, value);
+        addToFront(newNode);
+        mp[key] = newNode;
     }
 };
 
@@ -77,13 +69,14 @@ public:
  * int param_1 = obj->get(key);
  * obj->put(key,value);
 
+ O(1) put/get
 
-least recently used, O(1)
-hash map with linked to get from end and remove from start
+struct Node {
+    int val;
+    Node *prev;
+    Node *next;
+    Node(int val=0, Node *p=nullptr, Node *n=nullptr) : val(val), prev(p), next(n);
+};
 
-get return key value or -1
-update : remove and add to the end
-put : remove existing one if exist, remove first if full then add to the end
-
-
+ unordered_map<Node*, Node*> mp;
  */
